@@ -1,0 +1,25 @@
+{
+  "name": "naveenda.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "format": "prettier  --write './**/*.@(css|json)'",
+    "lint": "html-linter --config ./html-linter.json *.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NaveenDA/naveenda.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NaveenDA/naveenda.github.io/issues"
+  },
+  "homepage": "https://github.com/NaveenDA/naveenda.github.io#readme",
+  "devDependencies": {
+    "html-linter": "^1.1.0",
+    "husky": "^1.1.2",
+    "prettier": "^1.14.3"
+  }
+}
