@@ -1,134 +1,137 @@
 <!DOCTYPE html>
 <html>
+
 <head>
- <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="A jQuery plugin allows to use arrowkeys navigation for html table as like microsoft's excel">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="A jQuery plugin allows to use arrowkeys navigation for html table as like microsoft's excel">
 
 	<title>Tablenav- Navigate html table as like Microsoft's Excel. </title>
 	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-<link rel="icon" href="./favicon.ico" type="image/x-icon">
-<link rel="stylesheet" href="./css/bootstrap.min.css">
-<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<style type="text/css">	
-</style>
-<link rel="stylesheet" type="text/css" href="css/prism.css">
+	<link rel="icon" href="./favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style type="text/css">
+	</style>
+	<link rel="stylesheet" type="text/css" href="css/prism.css">
 
 </head>
+
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-<nav class="navbar navbar-default  navbar-fixed-top">
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">TableNav</a>
-    </div>
+	<nav class="navbar navbar-default  navbar-fixed-top">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+				 aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">TableNav</a>
+			</div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#home">Home <span class="sr-only">(current)</span></a></li>
-        <li><a href="#examples">Examples</a></li>
-        <li><a href="#optionsd">Options</a></li>
-        <li><a href="#disqus">Discus</a></li>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#home">Home <span class="sr-only">(current)</span></a></li>
+					<li><a href="#examples">Examples</a></li>
+					<li><a href="#optionsd">Options</a></li>
+					<li><a href="#disqus">Discus</a></li>
 
-      </ul>
-      <form class="navbar-form navbar-right" role="search">
+				</ul>
+				<form class="navbar-form navbar-right" role="search">
 
-  <a href="https://github.com/NaveenDA/tablenav/archive/master.zip" class="btn btn-primary">Download</a>
-  <a href="https://github.com/NaveenDA/tablenav" class="btn btn-success">Github</a>
-</form>
- 
-     
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-<div class="container-fluid main-div">
-	<div class="row" id="home">
-	<div class="col-md-1"></div>
-		<div class="col-md-4">
-			<img src="table-nav.png" class="img img-responsive">
+					<a href="https://github.com/NaveenDA/tablenav/archive/master.zip" class="btn btn-primary">Download</a>
+					<a href="https://github.com/NaveenDA/tablenav" class="btn btn-success">Github</a>
+				</form>
+
+
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+	<div class="container-fluid main-div">
+		<div class="row" id="home">
+			<div class="col-md-1"></div>
+			<div class="col-md-4">
+				<img src="table-nav.png" class="img img-responsive">
+			</div>
+
+			<div class="col-md-6 col-md-offset-1 des">
+				Arrow key navigation for html table
+				<br>
+				<span>TableNav is intractive jquery plugin for html table.</span>
+				<p>&nbsp;</p>
+				<p>
+					<a href="https://github.com/NaveenDA/tablenav/archive/master.zip" class="btn btn-success btn-oii">
+						<i class="fa fa-cloud-download "></i>
+						Download
+					</a>
+					<a href="https://github.com/NaveenDA/tablenav" class="btn btn-default btn-oii">
+						<i class="fa fa-github "></i>
+						View Source
+					</a>
+				</p>
+			</div>
+
 		</div>
 
-		<div class="col-md-6 col-md-offset-1 des">
-			Arrow key navigation for html table
-			<br>
-			<span>TableNav is intractive jquery plugin for html table.</span>
-			<p>&nbsp;</p>
-			<p >
-				<a href="https://github.com/NaveenDA/tablenav/archive/master.zip" class="btn btn-success btn-oii">
-				<i class="fa fa-cloud-download "></i>
-					Download
-				</a>
-				<a href="https://github.com/NaveenDA/tablenav" class="btn btn-default btn-oii">
-					<i class="fa fa-github "></i>
-					View Source
-				</a>
-			</p>
+		<div class="row">
+			<div class="col-md-1"></div>
+			<div class="col-md-10 whiteBG sup-div">
+				<span class="sub-bro">Suppoerted Browser</span>
+				<table class="table table-bordered bro-table">
+					<tr>
+						<td class=" col-md-2 text-center"> IE<br><i class="fa fa-internet-explorer"></i> - 9+</td>
+						<td class=" col-md-2 text-center whiteBG">Firefox<br><i class="fa fa-firefox"></i> - 52+</td>
+						<td class=" col-md-2 text-center">Chrome<br><i class="fa fa-chrome"></i> - 57+</td>
+						<td class=" col-md-2 text-center">Safari<br><i class="fa fa-safari"></i> - 9.1+</td>
+						<td class=" col-md-2 text-center">Opera<br><i class="fa fa-opera"></i> - 44+</td>
+
+					</tr>
+				</table>
+			</div>
+			<div class="col-md-1"></div>
+
 		</div>
+
+
 
 	</div>
 
-	<div class="row">
-	<div class="col-md-1"></div>
-		<div class="col-md-10 whiteBG sup-div">
-<span class="sub-bro">Suppoerted Browser</span>
-<table class="table table-bordered bro-table">
-<tr>
-<td class=" col-md-2 text-center"> IE<br><i class="fa fa-internet-explorer"></i> - 9+</td>
-<td class=" col-md-2 text-center whiteBG">Firefox<br><i class="fa fa-firefox"></i> - 52+</td>
-<td class=" col-md-2 text-center">Chrome<br><i class="fa fa-chrome"></i> - 57+</td>
-<td class=" col-md-2 text-center">Safari<br><i class="fa fa-safari"></i> - 9.1+</td>
-<td class=" col-md-2 text-center">Opera<br><i class="fa fa-opera"></i> - 44+</td>
 
-</tr>
-</table>
-		</div>
-	<div class="col-md-1"></div>
-
-		</div>
+	<div class="container whiteBG">
 
 
-
-</div>
-
-
-<div class="container whiteBG">
-
-
-<h3>Installation</h3>
-<p>TableNav is a the jQuery plugin, used you need jquery before install it,then</p>
- <pre><code class="language-markup">&lt;script src=&quot;path/to/jquery.tablenav.js&quot;&gt;&lt;/script&gt;
+		<h3>Installation</h3>
+		<p>TableNav is a the jQuery plugin, used you need jquery before install it,then</p>
+		<pre><code class="language-markup">&lt;script src=&quot;path/to/jquery.tableNavigator.js&quot;&gt;&lt;/script&gt;
 &lt;script>
 
 $(function() {
-$("table").tabnav();
+$("table").tableNavigator();
 });
 
 &lt;/script>
 </code></pre>
 
-<h3>Examples</h3>
-<section id="examples">
-	
-<p>You lots of awesome thing using table, here some examples</p>
+		<h3>Examples</h3>
+		<section id="examples">
 
-<iframe src="./demo/simple.html" style="width: 100%;height: 325px; border: 0;"></iframe>
-<pre><code class="language-markup">
+			<p>You lots of awesome thing using table, here some examples</p>
+
+			<iframe src="./demo/simple.html" style="width: 100%;height: 325px; border: 0;"></iframe>
+			<pre><code class="language-markup">
 
 &lt;script>
 
 $(function() {
-$("table").tabnav({
+$("table").tableNavigator({
 	input:true,
 	background:'transparent'
 });
@@ -137,12 +140,12 @@ $("table").tabnav({
 &lt;/script>
 </code></pre>
 
-<iframe src="./demo/basic-background-color.html" style="width: 100%;height: 325px; border: 0;"></iframe>
-<pre><code class="language-markup">
+			<iframe src="./demo/basic-background-color.html" style="width: 100%;height: 325px; border: 0;"></iframe>
+			<pre><code class="language-markup">
 &lt;script>
 
 $(function() {
-$("table").tabnav({
+$("table").tableNavigator({
 	background:'#89AAE6',
 	input:true
 });
@@ -151,22 +154,22 @@ $("table").tabnav({
 &lt;/script>
 </code></pre>
 
-<iframe src="./demo/without-input.html" style="width: 100%;height: 325px; border: 0;"></iframe>
+			<iframe src="./demo/without-input.html" style="width: 100%;height: 325px; border: 0;"></iframe>
 
-<pre><code class="language-markup">&lt;script>
+			<pre><code class="language-markup">&lt;script>
 $(function() {
-$("table").tabnav();
+$("table").tableNavigator();
 });
 
 &lt;/script>
 </code></pre>
 
 
-<iframe src="./demo/custom-style.html" style="width: 100%;height: 325px; border: 0;"></iframe>
+			<iframe src="./demo/custom-style.html" style="width: 100%;height: 325px; border: 0;"></iframe>
 
-<pre><code class="language-markup">&lt;script>
+			<pre><code class="language-markup">&lt;script>
 $(function() {
-$("table").tabnav({
+$("table").tableNavigator({
 	input:true,
 	background:'steelblue'
 });
@@ -183,110 +186,110 @@ border: none;
 &lt;/style&gt;
 
 </code></pre>
-</section>
+		</section>
 
 
-<section id="optionsd">
-	<h4>Global Options</h4>
-	<div class="row">
-		<div class="col-md-6">
-			<table class="table table-striped table-bordered">
-				<thead>
-					<tr>
-						<th>Property</th>
-						<th>Default Value</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>Input</td>
-						<td>False</td>
-					</tr>
-					<tr>
-						<td>Click</td>
-						<td>true</td>
-					</tr>
-					<tr>
-						<td>Background</td>
-						<td>#e7fac6</td>
-					</tr>
-					<tr>
-						<td>z-index</td>
-						<td>12</td>
-					</tr>
-					<tr>
-						<td>Class</td>
-						<td>grid-table-clicked</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
+		<section id="optionsd">
+			<h4>Global Options</h4>
+			<div class="row">
+				<div class="col-md-6">
+					<table class="table table-striped table-bordered">
+						<thead>
+							<tr>
+								<th>Property</th>
+								<th>Default Value</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Input</td>
+								<td>False</td>
+							</tr>
+							<tr>
+								<td>Click</td>
+								<td>true</td>
+							</tr>
+							<tr>
+								<td>Background</td>
+								<td>#e7fac6</td>
+							</tr>
+							<tr>
+								<td>z-index</td>
+								<td>12</td>
+							</tr>
+							<tr>
+								<td>Class</td>
+								<td>grid-table-clicked</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</section>
+		<section id="disqus">
+			<div id="disqus_thread"></div>
+			<script>
+
+				/**
+				*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+				*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+				/*
+				var disqus_config = function () {
+				this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+				this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+				};
+				*/
+				(function () { // DON'T EDIT BELOW THIS LINE
+					var d = document, s = d.createElement('script');
+					s.src = 'https://tablenav.disqus.com/embed.js';
+					s.setAttribute('data-timestamp', +new Date());
+					(d.head || d.body).appendChild(s);
+				})();
+			</script>
+			<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+					Disqus.</a></noscript>
+
+		</section>
 	</div>
-</section>
-<section id="disqus">
-	<div id="disqus_thread"></div>
-<script>
+	<script type="text/javascript" src="./js/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./js/prism.js"></script>
 
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-/*
-var disqus_config = function () {
-this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-*/
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://tablenav.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                            
-</section>
-</div>
-<script type="text/javascript" src="./js/jquery.min.js"></script>
-<script type="text/javascript" src="./js/bootstrap.min.js"></script>
-<script type="text/javascript" src="./js/prism.js"></script>
-
-<script type="text/javascript">
-
-	
-$(window).scroll(function(event) {
-
-if($(this).scrollTop() > 100){
-$("nav.navbar").addClass('navbar-white').removeClass('navbar-default');
-
-}else{
+	<script type="text/javascript">
 
 
-$("nav.navbar").addClass('navbar-default').removeClass('navbar-white');
+		$(window).scroll(function (event) {
+
+			if ($(this).scrollTop() > 100) {
+				$("nav.navbar").addClass('navbar-white').removeClass('navbar-default');
+
+			} else {
 
 
-}
-
-});
+				$("nav.navbar").addClass('navbar-default').removeClass('navbar-white');
 
 
-</script>
-<script id="dsq-count-scr" src="//tablenav.disqus.com/count.js" async></script>
+			}
+
+		});
+
+
+	</script>
+	<script id="dsq-count-scr" src="//tablenav.disqus.com/count.js" async></script>
 	<script>
-(function (u, s, e, r, g) { 
-    u[r] = u[r] || [];
-    u[r].push({
-      'ug.start': new Date().getTime(), event: 'embed.js',
-    });
-    var f = s.getElementsByTagName(e)[0],
-        j = s.createElement(e);
-    j.async = true;
-    j.src = 'https://static.userguiding.com/media/user-guiding-'
-     + g + '-embedded.js';
-    f.parentNode.insertBefore(j, f);
-})(window, document, 'script', 'userGuidingLayer', '93338852ID');
-</script>
+		(function (u, s, e, r, g) {
+			u[r] = u[r] || [];
+			u[r].push({
+				'ug.start': new Date().getTime(), event: 'embed.js',
+			});
+			var f = s.getElementsByTagName(e)[0],
+				j = s.createElement(e);
+			j.async = true;
+			j.src = 'https://static.userguiding.com/media/user-guiding-'
+				+ g + '-embedded.js';
+			f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'userGuidingLayer', '93338852ID');
+	</script>
 </body>
+
 </html>
-
-
