@@ -25,7 +25,7 @@ First add the javascript and CSS file to your webpage
 
 ```javascript
 $(document).ready(function() {
-  $('table').tablenavigator();
+  $('table').tableNavigator();
 });
 ```
 
