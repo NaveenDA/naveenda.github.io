@@ -156,11 +156,23 @@ export default function Home() {
           font-size: 15px;
           color: #333;
           text-decoration: none !important;
+          background: linear-gradient(to right, #00d1b1 0%, #278fc6 98%);
+          background-size: 0px 2px;
+          background-repeat: no-repeat;
+          background-position: left 85%;
+          text-shadow: 0;
+          transition: all 0.3s linear;
+          padding-bottom: 5px;
+
+        }
+
+        header .links li a:hover {
+          background-size: 100% 2px;
         }
         .container {
           width: 80%;
           margin: 12px auto;
-          margin-bottom:0;
+          margin-bottom: 0;
         }
         .row {
           display: flex;
@@ -208,17 +220,19 @@ export default function Home() {
           border: 1px solid transparent;
           background-color: rgba(255, 255, 255, 1);
           border-radius: 16px;
-          box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.04);
+          box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
         }
         .card > div:hover {
           background: #ffecd8;
           transition: background-color 100ms linear;
         }
+        .card > div:hover .name {
+          text-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
+        }
         .card > div:hover .tag {
           background-color: #fa8738;
-          color:#fff;
+          color: #fff;
           transition: all 100ms linear;
-
         }
         .card .name {
           font-size: 18px;
@@ -242,6 +256,39 @@ export default function Home() {
           margin: 0 0.125em 0.333em 0;
           background-color: #f1f8ff;
         }
+
+        @media only screen and (max-width: 600px) {
+          body {
+            overflow-y: auto !important;
+          }
+          .row {
+            flex-wrap: wrap;
+          }
+          .col {
+            flex: 0 100%;
+          }
+          .projects {
+            height: auto !important;
+          }
+          .card {
+            width: 100%;
+          }
+          header .links {
+            flex: 0 calc(100vw - 200px);
+          }
+          header .links li a {
+            font-size: 9px;
+          }
+          .card > div {
+            box-shadow:
+          /* The top layer shadow */ 0 1px 1px
+                rgba(0, 0, 0, 0.15),
+              /* The second layer */ 0 10px 0 -5px #eee,
+              /* The second layer shadow */ 0 10px 1px -4px rgba(0, 0, 0, 0.15),
+              /* The third layer */ 0 20px 0 -10px #eee,
+              /* The third layer shadow */ 0 20px 1px -9px rgba(0, 0, 0, 0.15);
+          }
+        }
       `}</style>
 
       <style jsx global>{`
@@ -250,10 +297,26 @@ export default function Home() {
           padding: 0;
           margin: 0;
           font-family: "Nunito Sans";
-          background: #f6f6f6;
+          background: #FAFBFC;
         }
         body {
           overflow-y: hidden;
+        }
+        @media only screen and (max-width: 600px) {
+          body {
+            overflow-y: auto !important;
+          }
+        }
+        @keyframes backgroundGradient {
+          0% {
+            background-position: 50% 0%;
+          }
+          50% {
+            background-position: 50% 100%;
+          }
+          100% {
+            background-position: 50% 0%;
+          }
         }
         * {
           box-sizing: border-box;
