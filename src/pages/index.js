@@ -1,6 +1,28 @@
 import Head from "next/head";
+import { useState } from "react";
+const lightTheme = {
+  bg: "#fafbfc",
+  cardBG: "rgba(255, 255, 255, 1)",
+  cardBoxShadow:
+    "0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(166, 173, 201, 0.2)",
+  cardBoxHoverBG: "",
+};
+const darkTheme = {
+  bg: "#363942",
+  cardBg: "#363942",
+  cardBoxShadow: "0 -2px 10px rgba(0, 0, 0, .5)",
+  cardBoxHoverBG: "",
+};
 
 export default function Home() {
+  const [theme, setTheme] = useState("light");
+  const getTheme = (key) => {
+    if (theme === "light") {
+      return lightTheme[key] || "";
+    } else {
+      return darkTheme[key] || "";
+    }
+  };
   const projects = [
     {
       name: "Optime",
@@ -45,7 +67,7 @@ export default function Home() {
     <div className="homepage">
       <Head>
         <title>Naveen DA Portfolio</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href={"/favicon-" + theme + ".png"} type="image/png" />
         <link
           rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -56,13 +78,29 @@ export default function Home() {
         />
       </Head>
       <header>
-        <div className="logo">Naveen DA</div>
+        <div className="logo">
+          <img src="/naveenda-logo.svg" />
+        </div>
         <ul className="links">
           <li>
             <a href="/">Portfolio</a>
           </li>
           <li>
             <a href="https://twitter.com/NaveenDA_">Contact Me</a>
+          </li>
+          <li>
+            <a
+              href="#theme"
+              onClick={() => {
+                setTheme(theme === "light" ? "dark" : "light");
+              }}
+            >
+              {theme === "light" ? (
+                <span className="fa fa-moon-o"></span>
+              ) : (
+                <span className="fa fa-sun-o"></span>
+              )}
+            </a>
           </li>
         </ul>
       </header>
@@ -136,6 +174,10 @@ export default function Home() {
           padding-left: 45px;
           font-size: 22px;
         }
+        header .logo img {
+          height: 38px;
+          vertical-align: bottom;
+        }
         header .links {
           flex: 0 calc(90vw - 200px);
           padding-right: 45px;
@@ -163,7 +205,6 @@ export default function Home() {
           text-shadow: 0;
           transition: all 0.3s linear;
           padding-bottom: 5px;
-
         }
 
         header .links li a:hover {
@@ -218,9 +259,9 @@ export default function Home() {
           flex: 1 1 auto;
           padding: 1em;
           border: 1px solid transparent;
-          background-color: rgba(255, 255, 255, 1);
+          background-color: ${getTheme("cardBg")};
           border-radius: 16px;
-          box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
+          box-shadow: ${getTheme("cardBoxShadow")};
         }
         .card > div:hover {
           background: #ffecd8;
@@ -297,7 +338,7 @@ export default function Home() {
           padding: 0;
           margin: 0;
           font-family: "Nunito Sans";
-          background: #FAFBFC;
+          background: ${getTheme("bg")};
         }
         body {
           overflow-y: hidden;
