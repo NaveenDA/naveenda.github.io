@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build && next export",
     "start": "next start",
-    "postbuild": "cp -a out/. ../docs"
+    "postbuild": "cp -a out/. ../build"
   },
   "dependencies": {
     "next": "9.5.4",
