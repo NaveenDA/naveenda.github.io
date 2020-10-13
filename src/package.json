@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",
-    "start": "next start",
-    "postbuild": "cp -a out/. ../build"
+    "start": "next start"
   },
   "dependencies": {
     "next": "9.5.4",
