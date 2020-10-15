@@ -13,8 +13,14 @@ const ToggleTheme = () => {
   return (
     <Fragment>
       <div className="toggleWrapper">
-        <input type="checkbox" onChange={toggleTheme} checked={theme==="dark"}  className="dn"  id="dn" />
-        <label for="dn" className="toggle">
+        <input
+          type="checkbox"
+          onChange={toggleTheme}
+          checked={theme === "dark"}
+          className="dn"
+          id="dn"
+        />
+        <label htmlFor="dn" className="toggle">
           <span className="toggle__handler">
             <span className="crater crater--1"></span>
             <span className="crater crater--2"></span>
@@ -28,18 +34,6 @@ const ToggleTheme = () => {
           <span className="star star--6"></span>
         </label>
       </div>
-      {/* <button
-        type="button"
-        className="theme-toggle"
-        onClick={toggleTheme}
-        className={theme}
-      >
-        {theme === "light" ? (
-          <span className="fa fa-moon-o"></span>
-        ) : (
-          <span className="fa fa-sun-o"></span>
-        )}
-      </button> */}
       <style jsx>{`
         .toggleWrapper {
           position: absolute;
@@ -50,7 +44,7 @@ const ToggleTheme = () => {
           transform: scale(0.5);
         }
         .toggleWrapper input {
-          display:none;
+          display: none;
         }
 
         .toggle {
@@ -64,7 +58,6 @@ const ToggleTheme = () => {
           transition: background-color 200ms
             cubic-bezier(0.445, 0.05, 0.55, 0.95);
         }
-
 
         .toggle__handler {
           display: inline-block;

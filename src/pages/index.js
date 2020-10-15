@@ -1,15 +1,12 @@
 import { projects } from "../data/projects";
 import Head from "next/head";
+import { cdnImage } from "../components/utils";
 
 export default function Home() {
-  const getTheme = (theme) => {
-    return theme;
-  };
-
   return (
     <>
       <Head>
-        <title>Naveen DA Portfolio | Home</title>
+        <title>Naveen DA Portfolio </title>
       </Head>
       <div className="homepage">
         <main>
@@ -17,7 +14,7 @@ export default function Home() {
             <div className="row">
               <div className="col">
                 <div className="profile-image">
-                  <img src="/naveen-da-profile.png" />
+                  <img src={cdnImage("naveen-da-profile.png", false, "")} />
                 </div>
                 <h1>Hi,</h1>
                 <h1>I'm Naveen DA</h1>
@@ -51,7 +48,6 @@ export default function Home() {
               <div className="col">
                 <div className="projects">
                   {projects.map((item) => (
-
                     <a href={item.repo} className="card" key={item.name}>
                       <div>
                         <div className="name">{item.name}</div>

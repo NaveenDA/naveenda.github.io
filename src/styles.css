@@ -9,8 +9,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Nunito Sans";
-  overflow-y: hidden;
-
   background-color: var(--background);
   color: var(--text-color);
   transition: background-color 200ms, color 200ms;
@@ -32,6 +30,9 @@ body {
   --tag-hover-color: #fff;
   --tag-opacity: 1;
   --info-text: rgb(46 48 47 / 77%);
+  --quote-bg:#efefef;
+  --quote-shadow: 0 1px 1px rgba(255,255,255,0.5);
+  --photo-text:#676767;
 }
 
 body.dark {
@@ -49,6 +50,10 @@ body.dark {
   --tag-hover-color: rgb(205 225 238);
   --tag-opacity: 0.5;
   --info-text: rgb(222 222 222 / 77%);
+  --quote-bg:#343434;
+  --quote-shadow:none;
+  --photo-text:#bcbcbc;
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -198,6 +203,7 @@ header .logo {
   font-family: "Engagement", cursive;
   padding-left: 45px;
   font-size: 22px;
+  cursor: pointer;
 }
 header .logo img {
   height: 38px;
@@ -228,9 +234,11 @@ header .links li a {
   background-size: 0px 2px;
   background-repeat: no-repeat;
   background-position: left 85%;
-  text-shadow: 0;
   transition: all 0.3s linear;
   padding-bottom: 5px;
+}
+header .links li.active a{
+  background-size: 100% 2px;
 }
 
 header .links li a:hover {
@@ -246,5 +254,72 @@ header .logo img {
   }
   header .links li a {
     font-size: 9px;
+  }
+}
+
+
+.photography{
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 4em;
+}
+.photography blockquote {
+  padding:5px;
+}
+.photography blockquote p{
+  font-size: 28px;
+    font-style: italic;
+    background: var(--quote-bg);
+    display: inline;
+    color: var(--text-color);
+    text-shadow: var(--quote-shadow);
+    line-height: 46px;
+    box-shadow: 0 8px 0 #ccc;
+    padding: 0 15px;
+}
+
+
+.photography .info{
+  font-weight: 500;
+  color: var(--photo-text);
+  font-size: 21px;
+  line-height: 33px;
+}
+.photography .info a{
+  color:var(--color);
+}
+
+.lazy-load-image-background.blur.lazy-load-image-loaded > img{
+  width:100%;
+}
+
+
+.scrollTop {
+  position: fixed;
+  width: 40px;
+  right: 36px;
+  bottom: 35px;
+  background: #5d5b5b;
+  border-radius: 24px;
+  align-items: center;
+  height: 20px;
+  justify-content: center;
+  z-index: 1000;
+  cursor: pointer;
+  animation: fadeIn 0.3s;
+  transition: opacity 0.4s;
+  opacity: 0.5;
+}
+
+.scrollTop:hover{
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
   }
 }
