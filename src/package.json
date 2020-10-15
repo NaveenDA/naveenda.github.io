@@ -11,6 +11,8 @@
   "dependencies": {
     "next": "9.5.4",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "styled-components": "^5.2.0",
+    "use-dark-mode": "^2.3.1"
   }
 }

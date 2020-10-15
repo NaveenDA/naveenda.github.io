@@ -1,0 +1,250 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito Sans";
+  overflow-y: hidden;
+
+  background-color: var(--background);
+  color: var(--text-color);
+  transition: background-color 200ms, color 200ms;
+}
+
+body {
+  --background: #fafbfc;
+  --text-color: rgba(0, 0, 0, 0.87);
+  --link: #3182ce;
+  --color: #2e302f;
+  --card-bg: rgba(255, 255, 255, 1);
+  --card-boxshadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(166, 173, 201, 0.2);
+  --card-bg-hover: #ffecd8;
+  --logo-filter: invert(0);
+  --tag-bg: #f1f8ff;
+  --tag-hover-bg: #fa8738;
+  --tag-color: #0366d6;
+  --tag-hover-color: #fff;
+  --tag-opacity: 1;
+  --info-text: rgb(46 48 47 / 77%);
+}
+
+body.dark {
+  --background: #1a202c;
+  --text-color: #bcbcbc;
+  --color: #f7fafc;
+  --link: #63b3ed;
+  --card-bg: rgb(19 24 35);
+  --card-bg-hover: #1f2940;
+  --card-boxshadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  --logo-filter: invert(1);
+  --tag-bg: rgb(62 74 82);
+  --tag-hover-bg: rgb(67 82 95);
+  --tag-color: rgb(156 195 219);
+  --tag-hover-color: rgb(205 225 238);
+  --tag-opacity: 0.5;
+  --info-text: rgb(222 222 222 / 77%);
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    overflow-y: auto !important;
+  }
+}
+@keyframes backgroundGradient {
+  0% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+/**
+Home Page
+**/
+
+.profile-image img {
+  margin: 0 auto;
+  max-height: 350px;
+  opacity: 1;
+}
+.profile-image {
+  margin-bottom: 20px;
+}
+.dark .profile-image img {
+  opacity: 0.3;
+}
+
+.icons {
+  margin: 25px auto;
+}
+.icons a {
+  color: var(--color) !important;
+  padding-left: 12px;
+  font-size: 18px;
+}
+.info {
+  padding: 12px 5px;
+  color: var(--color);
+  font-weight: 300;
+}
+
+.container {
+  width: 80%;
+  margin: 12px auto;
+  margin-bottom: 0;
+}
+.row {
+  display: flex;
+}
+.col {
+  flex: 0 50%;
+}
+
+.projects {
+  display: flex;
+  flex-flow: wrap;
+  overflow-y: auto;
+  height: 92vh;
+}
+.card {
+  padding: 1em;
+  box-sizing: border-box;
+  width: 50%;
+  display: flex;
+  height: 245px;
+  text-decoration: none !important;
+}
+.card > div {
+  flex: 1 1 auto;
+  padding: 1em;
+  border: 1px solid transparent;
+  background-color: var(--card-bg);
+  border-radius: 16px;
+  box-shadow: var(--card-boxshadow);
+}
+.card > div:hover {
+  background: var(--card-bg-hover);
+  transition: background-color 100ms linear;
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14),
+    0 1px 10px 0 rgba(0, 0, 0, 0.12) !important;
+}
+.card > div:hover .name {
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
+}
+.card > div:hover .tag {
+  background-color: var(--tag-hover-bg);
+  color: var(--tag-hover-color);
+  transition: all 100ms linear;
+}
+.card .name {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+.card .info {
+  color: var(--info-text);
+}
+.tag {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  border: 1px solid transparent;
+  border-radius: 2em;
+  padding: 0 10px;
+  line-height: 22px;
+  color: var(--tag-color);
+  white-space: nowrap;
+  margin: 0 0.125em 0.333em 0;
+  background-color: var(--tag-bg);
+  opacity: var(--tag-opacity);
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    overflow-y: auto !important;
+  }
+  .row {
+    flex-wrap: wrap;
+  }
+  .col {
+    flex: 0 100%;
+  }
+  .projects {
+    height: auto !important;
+  }
+  .card {
+    width: 100%;
+  }
+}
+
+/** Header **/
+header {
+  height: 45px;
+  line-height: 45px;
+  display: flex;
+}
+header .logo {
+  flex: 0 200px;
+  font-family: "Engagement", cursive;
+  padding-left: 45px;
+  font-size: 22px;
+}
+header .logo img {
+  height: 38px;
+  vertical-align: bottom;
+}
+header .links {
+  flex: 0 calc(90vw - 200px);
+  padding-right: 45px;
+  text-align: right;
+  position: relative;
+}
+header .links ul {
+  list-style-type: none;
+  display: block;
+  height: 45px;
+  margin-top: 0;
+}
+header .links li {
+  display: inline;
+  padding-left: 12px;
+}
+
+header .links li a {
+  font-size: 12px;
+  color: var(--color);
+  text-decoration: none !important;
+  background: linear-gradient(to right, #00d1b1 0%, #278fc6 98%);
+  background-size: 0px 2px;
+  background-repeat: no-repeat;
+  background-position: left 85%;
+  text-shadow: 0;
+  transition: all 0.3s linear;
+  padding-bottom: 5px;
+}
+
+header .links li a:hover {
+  background-size: 100% 2px;
+}
+header .logo img {
+  filter: var(--logo-filter);
+}
+
+@media only screen and (max-width: 600px) {
+  header .links {
+    flex: 0 calc(100vw - 200px);
+  }
+  header .links li a {
+    font-size: 9px;
+  }
+}
