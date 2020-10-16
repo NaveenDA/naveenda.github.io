@@ -10,6 +10,7 @@ body {
   padding: 0;
   font-family: "Nunito Sans";
   background-color: var(--background);
+  overflow-x: hidden;
   color: var(--text-color);
   transition: background-color 200ms, color 200ms;
 }
@@ -255,6 +256,10 @@ header .logo img {
   header .links li a {
     font-size: 9px;
   }
+.img-wrapper .name{
+  display:none !important;
+}
+
 }
 
 
@@ -288,9 +293,9 @@ header .logo img {
 .photography .info a{
   color:var(--color);
 }
-
-.lazy-load-image-background.blur.lazy-load-image-loaded > img{
+.lazy-load-image-background > img{
   width:100%;
+  /* min-height: 500px; */
 }
 
 
@@ -323,3 +328,4 @@ header .logo img {
     opacity: 0.5;
   }
 }
+

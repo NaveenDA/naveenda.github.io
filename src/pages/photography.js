@@ -1,11 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { Head } from "next/head";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import {
+  LazyLoadImage,
+  trackWindowScroll,
+} from "react-lazy-load-image-component";
 import { photos } from "../data/photos";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import { cdnImage, shuffle } from "../components/utils";
+import Image from "../components/image";
 
-const Photography = (props) => {
+const Photography = ({ scrollPosition }) => {
   const listOfPhotos = shuffle(photos);
   const [showScroll, setShowScroll] = useState(false);
 
@@ -56,13 +60,15 @@ const Photography = (props) => {
         </div>
         <div className="photos">
           {listOfPhotos.map((item) => (
-            <LazyLoadImage
-              key={item.url}
-              src={cdnImage(item.url)}
-              alt={item.name}
-              effect="blur"
-              placeholderSrc={cdnImage(item.url, true)}
-            />
+            <Image key={item.url} src={item.url} name={item.name}>
+              <LazyLoadImage
+                src={cdnImage(item.url)}
+                alt={item.name}
+                scrollPosition={scrollPosition}
+                effect="black-and-white"
+                placeholderSrc={cdnImage(item.url, true)}
+              />
+            </Image>
           ))}
         </div>
         <div
@@ -76,4 +82,4 @@ const Photography = (props) => {
     </>
   );
 };
-export default Photography;
+export default trackWindowScroll(Photography);
