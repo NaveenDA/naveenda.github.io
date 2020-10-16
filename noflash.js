@@ -3,6 +3,14 @@
     document.body.className = newTheme;
     window.__theme = newTheme;
     window.__onThemeChange(newTheme);
+    var link =
+      document.querySelector("link[rel*='icon']") ||
+      document.createElement("link");
+    link.type = "image/x-icon";
+    link.rel = "shortcut icon";
+    var newTheme = newTheme === "dark" ? "light" : "dark";
+    link.href = "/favicon-" + newTheme + ".png";
+    document.getElementsByTagName("head")[0].appendChild(link);
   }
   window.__onThemeChange = function () {};
   window.__setPreferredTheme = function (newTheme) {
