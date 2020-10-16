@@ -10,9 +10,8 @@ import { cdnImage, shuffle } from "../components/utils";
 import Image from "../components/image";
 
 const Photography = ({ scrollPosition }) => {
-  const listOfPhotos = shuffle(photos);
   const [showScroll, setShowScroll] = useState(false);
-
+  const [listOfPhotos, showlistOfPhotos] = useState([]);
   const scrollTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
@@ -27,6 +26,7 @@ const Photography = ({ scrollPosition }) => {
     if (process.browser) {
       window.addEventListener("scroll", checkScrollTop);
     }
+    showlistOfPhotos(shuffle(photos));
   }, []);
 
   return (

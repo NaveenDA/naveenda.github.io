@@ -1,9 +1,10 @@
-import * as React from "react";
+import React, { useEffect, useState } from "react";
 import { usePalette } from "react-palette";
 import { cdnImage, shuffle } from "../components/utils";
 
 const Image = (props) => {
   const { data, loading, error } = usePalette(cdnImage(props.src));
+
   return (
     <>
       <div className="img-wrapper">
