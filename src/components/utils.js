@@ -1,8 +1,8 @@
 // prettier-ignore
-export const cdnImage = (name, placeholder,folder='/photography') => {
+export const cdnImage = (name, placeholder,folder='/photography',count=10) => {
   if (process.env.NODE_ENV === "production") {
     if (placeholder) {
-      return "https://cdn.statically.io/img/naveenda.github.io/h=10/"+folder+"/"+name;
+      return "https://cdn.statically.io/img/naveenda.github.io/h="+count+"/"+folder+"/"+name;
     } else {
       return "https://cdn.statically.io/img/naveenda.github.io/f=auto/"+folder+"/"+name;
     }

@@ -49,10 +49,10 @@ const Photography = ({ scrollPosition }) => {
             <p className="info">
               I always belive that, a single photo can change entire world from
               nuclear disaster field to garden. I occasionally upload the photo
-              on the my{" "}
+              on the my
               <a href="https://www.instagram.com/naveenda_">
                 Instagram account.
-              </a>{" "}
+              </a>
               I always want to become a street photographer, but I never take a
               good street photo till date.
             </p>
