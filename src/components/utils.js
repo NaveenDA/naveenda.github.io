@@ -2,7 +2,7 @@
 export const cdnImage = (name, placeholder,folder='/photography') => {
   if (process.env.NODE_ENV === "production") {
     if (placeholder) {
-      return "https://cdn.statically.io/img/naveenda.github.io/h=100/"+folder+"/"+name;
+      return "https://cdn.statically.io/img/naveenda.github.io/h=10/"+folder+"/"+name;
     } else {
       return "https://cdn.statically.io/img/naveenda.github.io/f=auto/"+folder+"/"+name;
     }

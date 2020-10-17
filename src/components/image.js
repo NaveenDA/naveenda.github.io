@@ -3,7 +3,7 @@ import { usePalette } from "react-palette";
 import { cdnImage, shuffle } from "../components/utils";
 
 const Image = (props) => {
-  const { data, loading, error } = usePalette(cdnImage(props.src));
+  const { data, loading, error } = usePalette(cdnImage(props.src,true));
 
   return (
     <>
