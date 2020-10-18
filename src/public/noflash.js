@@ -8,7 +8,6 @@
       document.createElement("link");
     link.type = "image/x-icon";
     link.rel = "shortcut icon";
-    var newTheme = newTheme === "dark" ? "light" : "dark";
     link.href = "/favicon-" + newTheme + ".png";
     document.getElementsByTagName("head")[0].appendChild(link);
   }

@@ -8,6 +8,8 @@ import { photos } from "../data/photos";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import { cdnImage, shuffle } from "../components/utils";
 import Image from "../components/image";
+import Fade from "react-reveal/Fade";
+import Footer from "../components/footer";
 
 const Photography = ({ scrollPosition }) => {
   const [showScroll, setShowScroll] = useState(false);
@@ -49,26 +51,28 @@ const Photography = ({ scrollPosition }) => {
             <p className="info">
               I always belive that, a single photo can change entire world from
               nuclear disaster field to garden. I occasionally upload the photo
-              on the my
+              on the my&nbsp;
               <a href="https://www.instagram.com/naveenda_">
                 Instagram account.
               </a>
-              I always want to become a street photographer, but I never take a
-              good street photo till date.
+              &nbsp; I always want to become a street photographer, but I never
+              take a good street photo till date.
             </p>
           </div>
         </div>
         <div className="photos">
           {listOfPhotos.map((item) => (
-            <Image key={item.url} src={item.url} name={item.name}>
-              <LazyLoadImage
-                src={cdnImage(item.url)}
-                alt={item.name}
-                scrollPosition={scrollPosition}
-                effect="black-and-white"
-                placeholderSrc={cdnImage(item.url, true)}
-              />
-            </Image>
+            <Fade bottom key={item.url}>
+              <Image src={item.url} name={item.name}>
+                <LazyLoadImage
+                  src={cdnImage(item.url)}
+                  alt={item.name}
+                  scrollPosition={scrollPosition}
+                  effect="black-and-white"
+                  placeholderSrc={cdnImage(item.url, true)}
+                />
+              </Image>
+            </Fade>
           ))}
         </div>
         <div
@@ -79,6 +83,7 @@ const Photography = ({ scrollPosition }) => {
           <i className="fa fa-arrow-up"></i>
         </div>
       </div>
+      <Footer />
     </>
   );
 };
