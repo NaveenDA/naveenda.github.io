@@ -18,6 +18,10 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Engagement&family=Nunito Sans&display=swap"
             rel="stylesheet"
           />
+          <meta
+            name="google-site-verification"
+            content="8CYV4Oyz865mIuy-fi8ERPZBOxhznQKaKWCn9CDcgPE"
+          />
         </Head>
         <body>
           <script src="noflash.js" />
