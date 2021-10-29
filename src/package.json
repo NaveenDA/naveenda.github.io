@@ -5,7 +5,7 @@
 
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export && touch ../build/.nojekyll",
+    "build": "next build && next export",
     "start": "next start",
     "postbuild": "cp -a out/. ../build"
   },
