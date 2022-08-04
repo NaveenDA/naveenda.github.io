@@ -22,6 +22,10 @@ class MyDocument extends Document {
             name="google-site-verification"
             content="8CYV4Oyz865mIuy-fi8ERPZBOxhznQKaKWCn9CDcgPE"
           />
+  <meta property="og:title" content="Naveen DA Portfolio" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://naveenda.github.io/" />
+<meta property="og:image" content="https://grabify.link/T1W52J" />
         </Head>
         <body>
           <script src="noflash.js" />
