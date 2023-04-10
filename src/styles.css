@@ -345,3 +345,19 @@ header .logo img {
   font-size: 2em;
   font-weight: 600;
 }
+
+/* Load kiliki font */
+@font-face {
+  font-family: "Kiliki";
+  src: url("/KiLiKi-Maa.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+body.dark .kiliki{
+background:#1f2940;
+color:#fff;
+}
+
