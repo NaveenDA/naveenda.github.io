@@ -18,12 +18,6 @@ const Header = (props) => {
           <li className={router.pathname == "/" ? "active" : ""}>
             <Link href="/">Portfolio</Link>
           </li>
-          <li className={router.pathname == "/photography" ? "active" : ""}>
-            <Link href="/photography">Photography</Link>
-          </li>
-          <li>
-            <Link href="/">Drawing</Link>
-          </li>
           <li>
             <Link href="https://twitter.com/NaveenDA_">Contact Me</Link>
           </li>
