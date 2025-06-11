@@ -1,0 +1,40 @@
+
+<svg width="600" height="320" viewBox="0 0 600 320" xmlns="http://www.w3.org/2000/svg">
+    <!-- Population -->
+    <rect x="30" y="40" width="120" height="60" fill="#ffe066" stroke="#bfa600" stroke-width="2"/>
+    <text x="90" y="75" font-size="18" text-anchor="middle" fill="#333">Population</text>
+    <text x="90" y="95" font-size="12" text-anchor="middle" fill="#666">Random Birds</text>
+    
+    <!-- Simulation -->
+    <rect x="200" y="40" width="120" height="60" fill="#b2f2ff" stroke="#228be6" stroke-width="2"/>
+    <text x="260" y="75" font-size="18" text-anchor="middle" fill="#333">Simulation</text>
+    <text x="260" y="95" font-size="12" text-anchor="middle" fill="#666">Play Flappy Bird</text>
+    
+    <!-- Evaluation -->
+    <rect x="370" y="40" width="120" height="60" fill="#d3f9d8" stroke="#51cf66" stroke-width="2"/>
+    <text x="430" y="75" font-size="18" text-anchor="middle" fill="#333">Evaluation</text>
+    <text x="430" y="95" font-size="12" text-anchor="middle" fill="#666">Fitness = Time Alive</text>
+    
+    <!-- Selection -->
+    <rect x="200" y="180" width="120" height="60" fill="#ffd6e0" stroke="#f06595" stroke-width="2"/>
+    <text x="260" y="215" font-size="18" text-anchor="middle" fill="#333">Selection</text>
+    <text x="260" y="235" font-size="12" text-anchor="middle" fill="#666">Best Networks</text>
+    
+    <!-- Reproduction -->
+    <rect x="370" y="180" width="120" height="60" fill="#e7eaf6" stroke="#5c7cfa" stroke-width="2"/>
+    <text x="430" y="215" font-size="18" text-anchor="middle" fill="#333">Reproduction</text>
+    <text x="430" y="235" font-size="12" text-anchor="middle" fill="#666">Mutate &amp; Crossover</text>
+    
+    <!-- Arrows -->
+    <line x1="150" y1="70" x2="200" y2="70" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="320" y1="70" x2="370" y2="70" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="430" y1="100" x2="430" y2="180" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="320" y1="210" x2="370" y2="210" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="260" y1="180" x2="260" y2="100" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+    
+    <defs>
+      <marker id="arrow" markerWidth="10" markerHeight="10" refX="10" refY="5" orient="auto" markerUnits="strokeWidth">
+        <path d="M0,0 L10,5 L0,10 z" fill="#333"/>
+      </marker>
+    </defs>
+  </svg>
