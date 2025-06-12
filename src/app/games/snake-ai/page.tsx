@@ -47,7 +47,7 @@ const SnakeAI = () => {
         private lastState: any;
         private lastAction: Action | null = null;
         private movesWithoutFood: number = 0;
-        private maxMovesWithoutFood: number = 100;
+        private maxMovesWithoutFood: number = 300;
         private gameSpeed: number = 50;
 
         constructor() {
@@ -97,7 +97,7 @@ const SnakeAI = () => {
 
           // Generation text
           this.generationText = this.add.text(
-            this.game.config.width as number - 200,
+            this.game.config.width as number - 300,
             16,
             `Generation: ${generation}`,
             {
