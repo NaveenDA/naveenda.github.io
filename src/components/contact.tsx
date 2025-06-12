@@ -58,7 +58,7 @@ const Contact = () => {
           className="max-w-4xl mx-auto text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Let's <span className="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">Connect</span>
+            Let's <span className="bg-gradient-to-r from-yellow-600 border-1 to-blue-600 bg-clip-text text-transparent">Connect</span>
           </h2>
           <p className="text-xl text-muted-foreground leading-relaxed">
             Interested in collaborating on ML projects, discussing AI innovations, or exploring opportunities? 
@@ -84,7 +84,7 @@ const Contact = () => {
                   </label>
                   <input
                     type="text"
-                    className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent transition-all"
+                    className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-yellow-600 border-1 focus:border-transparent transition-all"
                     placeholder="John"
                   />
                 </div>
@@ -94,7 +94,7 @@ const Contact = () => {
                   </label>
                   <input
                     type="text"
-                    className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent transition-all"
+                    className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-yellow-600 border-1 focus:border-transparent transition-all"
                     placeholder="Doe"
                   />
                 </div>
@@ -105,7 +105,7 @@ const Contact = () => {
                 </label>
                 <input
                   type="email"
-                  className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent transition-all"
+                  className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-yellow-600 border-1 focus:border-transparent transition-all"
                   placeholder="john@example.com"
                 />
               </div>
@@ -115,7 +115,7 @@ const Contact = () => {
                 </label>
                 <input
                   type="text"
-                  className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent transition-all"
+                  className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-yellow-600 border-1 focus:border-transparent transition-all"
                   placeholder="Let's discuss ML collaboration"
                 />
               </div>
@@ -125,7 +125,7 @@ const Contact = () => {
                 </label>
                 <textarea
                   rows={5}
-                  className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent transition-all resize-none"
+                  className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-yellow-600 border-1 focus:border-transparent transition-all resize-none"
                   placeholder="I'd love to discuss your work on recommendation systems..."
                 />
               </div>
@@ -163,15 +163,15 @@ const Contact = () => {
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   className="flex items-center space-x-4"
                 >
-                  <div className="flex-shrink-0 w-12 h-12 bg-purple-100 dark:bg-purple-900/30 rounded-full flex items-center justify-center">
-                    <item.icon className="w-5 h-5 text-purple-600" />
+                  <div className="flex-shrink-0 w-12 h-12 bg-yellow-100 border-1 dark:bg-yellow-900 border-1/30 rounded-full flex items-center justify-center">
+                    <item.icon className="w-5 h-5 text-yellow-600 border-1" />
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">{item.label}</p>
                     {item.link ? (
                       <a
                         href={item.link}
-                        className="text-foreground hover:text-purple-600 transition-colors"
+                        className="text-foreground hover:text-yellow-600 border-1 transition-colors"
                       >
                         {item.value}
                       </a>

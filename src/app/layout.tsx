@@ -9,7 +9,10 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Naveen DA - Machine Learning Engineer",
+  title: {
+    template: '%s | Naveen Portfolio',
+    default: 'Naveen Portfolio | Machine Learning Engineer',
+  },
   description: "Machine Learning Engineer with 8+ years of experience building scalable AI systems across startups and enterprise environments. Transforming data into intelligent solutions that drive real business impact.",
   keywords: [
     "Machine Learning Engineer",
@@ -29,16 +32,25 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://naveenda.dev",
+    url: "https://naveenda.github.io",
     title: "Naveen DA - Machine Learning Engineer",
     description: "Machine Learning Engineer with 8+ years of experience building scalable AI systems across startups and enterprise environments.",
     siteName: "Naveen DA Portfolio",
+    images: [
+      {
+        url: 'https://naveenda.github.io/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Naveen DA Portfolio',
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Naveen DA - Machine Learning Engineer",
     description: "Machine Learning Engineer with 8+ years of experience building scalable AI systems across startups and enterprise environments.",
-    creator: "@naveenda",
+    creator: "@naveenda_",
+    site: "@naveenda_",
   },
   robots: {
     index: true,
@@ -62,6 +74,7 @@ export default function RootLayout({
     <html lang="en" className={inter.variable}>
       <Head>
         <script src="https://cdn.jsdelivr.net/npm/neataptic@1.4.7/dist/neataptic.min.js" />
+        <meta name="apple-mobile-web-app-title" content="NaveenDA" />
       </Head>
       <body className={`${inter.className} antialiased`}>
         {children}

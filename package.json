@@ -15,6 +15,7 @@
     "framer-motion": "^12.16.0",
     "lucide-react": "^0.514.0",
     "matter-js": "^0.20.0",
+    "neataptic": "^1.4.7",
     "next": "15.3.3",
     "phaser": "^3.90.0",
     "react": "^19.0.0",
