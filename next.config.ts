@@ -5,7 +5,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '/portfoilio',
   // igore eslint error on build    
   eslint: {
     ignoreDuringBuilds: true,
