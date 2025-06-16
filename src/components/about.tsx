@@ -38,7 +38,7 @@ const About = () => {
     },
     {
       icon: Code,
-      title: "Software Engineering",
+      title: "Machine Learning Engineering",
       description: "Clean, scalable code with best practices in testing, CI/CD, and collaborative development.",
     },
     {

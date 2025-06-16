@@ -62,8 +62,7 @@ const FlappyBirdPage = () => {
                 <ArrowLeft className="w-4 h-4" />
             </button>
             <span className="text-sm">
-              Flappy Bird &copy; Dong Nguyen &mdash; Assets from{' '}
-              <a href="https://github.com/samuelcust/flappy-bird-assets" target="_blank" rel="noopener noreferrer" className="underline hover:text-yellow-300">samuelcust/flappy-bird-assets</a>
+              Flappy Bird on NEAT
             </span>
           </div>
           <div className="flex items-center gap-2">
