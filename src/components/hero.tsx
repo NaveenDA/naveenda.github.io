@@ -37,12 +37,17 @@ const Hero = () => {
 
   // Rotating list of skills for typewriter-like effect
   const skills = [
+    "Machine Learning",
     "Deep Learning",
-    "MLOps",
-    "Generative AI",
-    "PyTorch",
-    "TensorFlow",
-    "Python",
+    "Computer Vision",
+    "Natural Language Processing",
+    "Data Science",
+    "AI",
+    "ML",
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Open Source",
   ];
 
   const [skillIndex, setSkillIndex] = useState(0);
@@ -109,7 +114,7 @@ const Hero = () => {
             <div className="mb-4">I am</div>
             <div>NaveenDA</div>
             <div className="bg-gradient-to-r from-teal-400 via-fuchsia-500 to-violet-500 bg-clip-text text-transparent text-3xl md:text-4xl font-semibold mt-2 animate-[gradient-move_6s_linear_infinite]">
-              Machine-Learning Engineer
+              Machine Learning Engineer
             </div>
           </h1>
 
@@ -140,7 +145,7 @@ const Hero = () => {
             href="#work"
             className="inline-flex items-center text-gray-900 hover:text-gray-600 transition-colors group"
           >
-            <span className="text-lg font-medium">See My AI Projects</span>
+            <span className="text-lg font-medium">See My Work</span>
             <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </a>
         </motion.div>
