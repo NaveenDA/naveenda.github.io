@@ -73,7 +73,7 @@ const Projects = () => {
   ]
 
   return (
-    <section className="min-h-screen bg-stone-100 px-8 py-20" id="work">
+    <section className="min-h-screen bg-[#ECEEFC] px-8 py-20" id="work">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
