@@ -32,13 +32,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://naveenda.github.io",
+    url: "https://naveenda.live",
     title: "Naveen DA - Machine Learning Engineer",
     description: "Machine Learning Engineer with 8+ years of experience building scalable AI systems across startups and enterprise environments.",
     siteName: "Naveen DA Portfolio",
     images: [
       {
-        url: 'https://naveenda.github.io/og-image.jpg',
+        url: 'https://naveenda.live/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Naveen DA Portfolio',

@@ -51,8 +51,24 @@ const Projects = () => {
         label: "Try Snake AI",
         onClick: () => router.push("/games/snake-ai")
       },
-      tags: ["AI", "Game", "Snake","Q Learning"]
+      tags: ["AI", "Game", "Snake","Q Learning","Reinforcement Learning" ,]
     },
+    // longplayer
+    {
+      category: "LONGPLAYER",
+      title: "Longplayer",
+      description: "A simulation of Longplayer, a generative composition built from six short recordings of Tibetan singing bowls. For 1000 years, it will play without repetition.",
+      image: "/longplayer-demo.png",
+      imageAlt: "Longplayer",
+      mockupContent: (
+        <div className="bg-gradient-to-br from-yellow-200 via-yellow-300 to-orange-200 h-[200px] flex items-center justify-center"></div>
+      ),
+      button: {
+        label: "Try Longplayer",
+        onClick: () => router.push("/tools/longplayer")
+      },
+      tags: ["Generative","Sound","Tone.js","React"]
+    }
     // {
     //   category: "CLASSIC GAME AI",
     //   title: "Donkey Kong AI",
@@ -77,7 +93,7 @@ const Projects = () => {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <h1 className={`text-8xl font-bold  mb-6`}>
+          <h1 className={`text-4xl md:text-8xl font-bold  mb-6 `}>
              Projects <span className={`bg-teal-800 w-4 h-4 rounded-full inline-block`} />
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -88,7 +104,7 @@ const Projects = () => {
         </div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <motion.div
               key={project.title}
