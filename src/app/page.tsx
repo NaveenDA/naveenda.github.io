@@ -11,10 +11,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Naveen DA - Machine Learning Engineer',
     description: 'Welcome to my portfolio. I am a Machine Learning Engineer with significant open source contributions, including Next.js 12.2, phpLiteAdmin, and Parsel. I specialize in web development and building scalable applications.',
-    url: 'https://naveenda.github.io',
+    url: 'https://naveenda.live',
     images: [
       {
-        url: 'https://naveenda.github.io/og-image.jpg',
+        url: 'https://naveenda.live/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Naveen DA Portfolio',

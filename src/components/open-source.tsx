@@ -150,7 +150,7 @@ const Projects = () => {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <h1 className="text-8xl font-bold mb-6">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-6">
             Open Source <span className="bg-teal-800 w-4 h-4 rounded-full inline-block" />
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">

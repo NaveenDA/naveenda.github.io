@@ -4,7 +4,7 @@ Welcome to my portfolio website! This is a showcase of my work as a Machine Lear
 
 ## 🚀 Live Demo
 
-Visit the live portfolio at: [https://naveenda.github.io](https://naveenda.github.io)
+Visit the live portfolio at: [https://naveenda.live](https://naveenda.live)
 
 ## 🎮 Interactive AI Projects
 
@@ -12,13 +12,17 @@ Visit the live portfolio at: [https://naveenda.github.io](https://naveenda.githu
 - Classic Snake game implementation with AI
 - Uses NEAT (NeuroEvolution of Augmenting Topologies) and Q-Learning algorithms
 - Watch the AI learn and improve its gameplay through reinforcement learning
-- [Try it here](https://naveenda.github.io/games/snake-ai)
+- [Try it here](https://naveenda.live/games/snake-ai)
 
 ### 2. Flappy Bird AI with NEAT
 - Flappy Bird game with AI implementation
 - Uses NEAT algorithm for neural network evolution
 - Demonstrates natural selection and adaptation in AI
-- [Try it here](https://naveenda.github.io/games/flappy-bird-ai)
+- [Try it here](https://naveenda.live/games/flappy-bird-ai)
+
+### 3. Longplayer Simulation
+- A simulation of Longplayer, a generative composition built from six short recordings of Tibetan singing bowls. For 1000 years, it will play without repetition.
+- [Try it here](https://naveenda.live/tools/longplayer)
 
 ## 🛠️ Technologies Used
 
