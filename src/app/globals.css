@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Kiliki Font */
+@font-face {
+  font-family: 'Kiliki';
+  src: url('/kiliki.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 @layer base {
   :root {
