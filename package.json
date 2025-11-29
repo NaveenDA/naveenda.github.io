@@ -20,7 +20,7 @@
     "p5": "^2.0.3",
     "phaser": "^3.90.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "react-dom": "^19.2.0",
     "react-game-engine": "^1.2.0",
     "react-markdown": "^10.1.0",
     "rehype-raw": "^7.0.0",
