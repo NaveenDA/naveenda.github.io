@@ -13,7 +13,7 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "framer-motion": "^12.16.0",
-    "lucide-react": "^0.514.0",
+    "lucide-react": "^0.553.0",
     "matter-js": "^0.20.0",
     "neataptic": "^1.4.7",
     "next": "15.4.7",
