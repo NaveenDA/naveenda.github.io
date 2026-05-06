@@ -22,12 +22,7 @@ export const metadata: Metadata = {
     }
 };
 
-const longplayerImages = [
-    "https://lh3.googleusercontent.com/gpms-cs-s/AB8u6Ha6eQms2djBZlTCraPDu2RmuIPmPOMOfaS702UYj_OAv7Tv2VyZK_Ky_IQIt6ScrZ7h-2dHgHUS8s_GDKvD0q9EWek_LyYDXa2-QbWGXy7VuElJXvni-Lqe8Au5ta0iDCm8-AE-=w400-h300-k-no",
-    "https://lh3.googleusercontent.com/gpms-cs-s/AB8u6HadViKnSM-tKJU2Rgl_Bqjyy9AYD8YGrQSJO8fkwzIRzOcv0vrvTm7pbqNxNLZaFnf5iE4Bqe9pxyqlUZ4FdKg57vvs0520S_Dlw7aLY-dHt_U7EePgmgAh0MtU3z-OvDbTuGk=w400-h300-k-no",
-    "https://lh3.googleusercontent.com/gpms-cs-s/AB8u6HYyksznXvZzu1YclrHG149ZPpvJQL_eMbQ7a1zHwyG8AIZc_Qq7Debv_uFsx4jH0RVKfOki4olkEyXNpaVdpq2f7zCnitDkAemE03seiNnlCRFeO8k-TIwZiYLg6-ouAcO6zVti=w400-h300-k-no",
-    "https://lh3.googleusercontent.com/gpms-cs-s/AB8u6HYq8H-EpcVxTlLHHmNR-7Dhld4G8uccmQOi_XBVkueAr-dzvHDJ7dJq0KrF9l8N8_XHGVUu-AVzbrtEFHc-OLxRVS0kF1YAuz6TYXGvBOmg-vJqt3KQ1tWZtN-6FJ0vJsoay-8=w400-h300-k-no",
-];
+const LONGPLAYER_IMAGE = "/images/longplayer/trinity-buoy-wharf-lighthouse.jpg";
 
 export default function LongplayerBlog() {
     return (
@@ -76,18 +71,45 @@ export default function LongplayerBlog() {
                     to continue - without repetition - until December 31, 2999.
                 </p>
 
-                <div className="grid grid-cols-2 gap-4">
-                    {longplayerImages.map((image, index) => (
-                        <Image
-                            key={index}
-                            src={image}
-                            alt="Longplayer"
-                            width={500}
-                            height={500}
-                            className="rounded-lg"
-                        />
-                    ))}
-                </div>
+                <figure className="my-6">
+                    <Image
+                        src={LONGPLAYER_IMAGE}
+                        alt="Trinity Buoy Wharf lighthouse (Bow Creek Lighthouse), London"
+                        width={1278}
+                        height={826}
+                        className="rounded-lg w-full h-auto"
+                    />
+                    <figcaption className="mt-2 text-xs text-gray-500">
+                        Photo by{" "}
+                        <a
+                            className="underline underline-offset-2 hover:text-gray-700"
+                            href="https://commons.wikimedia.org/wiki/User:Cmglee"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            Cmglee
+                        </a>
+                        , licensed under{" "}
+                        <a
+                            className="underline underline-offset-2 hover:text-gray-700"
+                            href="https://creativecommons.org/licenses/by-sa/3.0/"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            CC BY-SA 3.0
+                        </a>
+                        , via{" "}
+                        <a
+                            className="underline underline-offset-2 hover:text-gray-700"
+                            href="https://commons.wikimedia.org/wiki/File:Cmglee_Trinity_Buoy_Wharf_lighthouse.jpg"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            Wikimedia Commons
+                        </a>
+                        .
+                    </figcaption>
+                </figure>
 
                 <h2 className="text-xl font-semibold mt-6 mb-2">
                     Why I Found It Fascinating
