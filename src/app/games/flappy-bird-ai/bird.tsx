@@ -12,7 +12,7 @@ const FlappyBirdGame = dynamic(() => import('./phaser-game'), {
 
 const neatInfo = `
 # How NEAT Learns to Play Flappy Bird
-NEAT (NeuroEvolution of Augmenting Topologies) is a powerful algorithm that evolves neural networks using principles inspired by natural selection. In our Flappy Bird AI, NEAT helps a population of birds learn to play the game—without any hardcoded rules!
+NEAT (NeuroEvolution of Augmenting Topologies) is a powerful algorithm that evolves neural networks using principles inspired by natural selection. In our Flappy Bird AI, NEAT helps a population of birds learn to play the game--without any hardcoded rules!
 
 ## The NEAT Evolution Cycle
 Let's break down how NEAT works in this project:

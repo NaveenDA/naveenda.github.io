@@ -1,0 +1,33 @@
+<svg width="860" height="375" viewBox="0 0 860 375" xmlns="http://www.w3.org/2000/svg">
+  <rect width="860" height="375" fill="#f8fafc" rx="14"/>
+
+  <text x="430" y="30" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#111827">How Many Resumes Actually Reach a Recruiter</text>
+
+  <!-- Layer 1: 1,000 submitted -->
+  <polygon points="80,48 780,48 730,103 130,103" fill="#e2e8f0"/>
+  <text x="430" y="76" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#374151">1,000</text>
+  <text x="430" y="94" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#6b7280">resumes submitted to a single job posting</text>
+
+  <!-- Layer 2: 750 parse -->
+  <polygon points="130,108 730,108 635,163 225,163" fill="#ccfbf1"/>
+  <text x="430" y="136" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#0f766e">750</text>
+  <text x="430" y="154" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#0f766e">parse without critical errors  (75%)</text>
+
+  <!-- Layer 3: 350 keyword -->
+  <polygon points="225,168 635,168 530,223 330,223" fill="#2dd4bf"/>
+  <text x="430" y="196" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="white">350</text>
+  <text x="430" y="214" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="white">score above keyword threshold  (35%)</text>
+
+  <!-- Layer 4: 80 recruiter -->
+  <polygon points="330,228 530,228 470,283 390,283" fill="#0f766e"/>
+  <text x="430" y="256" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="white">80</text>
+  <text x="430" y="274" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#ccfbf1">reach recruiter queue  (8%)</text>
+
+  <!-- Layer 5: 12 interviews -->
+  <polygon points="390,288 470,288 470,343 390,343" fill="#115e59"/>
+  <text x="430" y="316" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="white">12</text>
+  <text x="430" y="334" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#99f6e4">get an interview  (1.2%)</text>
+
+  <!-- Footer label -->
+  <text x="430" y="362" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#9ca3af">naveenda.live - illustrative figures based on industry data</text>
+</svg>

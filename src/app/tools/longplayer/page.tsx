@@ -40,7 +40,7 @@ export default function LongplayerBlog() {
 
                 <p className="mb-4">
                     A few weeks ago, I stumbled upon something surreal while
-                    walking through Trinity Buoy Wharf in London — a calm,
+                    walking through Trinity Buoy Wharf in London - a calm,
                     ambient drone filling a quiet lighthouse space. I soon
                     learned I was listening to{" "}
                     <strong>Longplayer</strong>: a piece of generative music
@@ -73,7 +73,7 @@ export default function LongplayerBlog() {
                     Tibetan singing bowls. The magic lies in how these loops are
                     layered and time-shifted so they interact differently over
                     time. It started playing on January 1, 2000 and is intended
-                    to continue — without repetition — until December 31, 2999.
+                    to continue - without repetition - until December 31, 2999.
                 </p>
 
                 <div className="grid grid-cols-2 gap-4">
@@ -96,7 +96,7 @@ export default function LongplayerBlog() {
                     As a developer who enjoys generative systems, this felt like
                     music-meets-systems design at an epic scale. The system
                     doesn't store a 1,000-year-long file. Instead, it uses time
-                    — yes, real time — to determine exactly what should be
+                    - yes, real time - to determine exactly what should be
                     playing at any given moment.
                 </p>
 

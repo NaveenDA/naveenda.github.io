@@ -1,0 +1,69 @@
+<svg width="860" height="320" viewBox="0 0 860 320" xmlns="http://www.w3.org/2000/svg">
+  <rect width="860" height="320" fill="#f8fafc" rx="14"/>
+
+  <text x="430" y="28" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#111827">Your ATS-Ready Submission Checklist</text>
+  <text x="430" y="46" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#6b7280">Run through each of these before you hit submit</text>
+
+  <!-- Row 0, Col 0 -->
+  <rect x="20" y="62" width="265" height="66" rx="10" fill="white" stroke="#bbf7d0" stroke-width="1.5"/>
+  <circle cx="52" cy="95" r="16" fill="#dcfce7"/>
+  <text x="52" y="100" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#16a34a">&#x2713;</text>
+  <text x="76" y="88" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#111827">Single-column layout</text>
+  <text x="76" y="105" font-family="Arial, Helvetica, sans-serif" font-size="10.5" fill="#6b7280">No tables or multi-column</text>
+
+  <!-- Row 0, Col 1 -->
+  <rect x="298" y="62" width="265" height="66" rx="10" fill="white" stroke="#bbf7d0" stroke-width="1.5"/>
+  <circle cx="330" cy="95" r="16" fill="#dcfce7"/>
+  <text x="330" y="100" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#16a34a">&#x2713;</text>
+  <text x="354" y="88" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#111827">Standard section names</text>
+  <text x="354" y="105" font-family="Arial, Helvetica, sans-serif" font-size="10.5" fill="#6b7280">Work Experience, Skills...</text>
+
+  <!-- Row 0, Col 2 -->
+  <rect x="576" y="62" width="265" height="66" rx="10" fill="white" stroke="#bbf7d0" stroke-width="1.5"/>
+  <circle cx="608" cy="95" r="16" fill="#dcfce7"/>
+  <text x="608" y="100" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#16a34a">&#x2713;</text>
+  <text x="632" y="88" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#111827">No text in images</text>
+  <text x="632" y="105" font-family="Arial, Helvetica, sans-serif" font-size="10.5" fill="#6b7280">Plain text only - skip icons</text>
+
+  <!-- Row 1, Col 0 -->
+  <rect x="20" y="143" width="265" height="66" rx="10" fill="white" stroke="#bbf7d0" stroke-width="1.5"/>
+  <circle cx="52" cy="176" r="16" fill="#dcfce7"/>
+  <text x="52" y="181" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#16a34a">&#x2713;</text>
+  <text x="76" y="169" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#111827">Contact in body</text>
+  <text x="76" y="186" font-family="Arial, Helvetica, sans-serif" font-size="10.5" fill="#6b7280">Not in header or footer</text>
+
+  <!-- Row 1, Col 1 -->
+  <rect x="298" y="143" width="265" height="66" rx="10" fill="white" stroke="#bbf7d0" stroke-width="1.5"/>
+  <circle cx="330" cy="176" r="16" fill="#dcfce7"/>
+  <text x="330" y="181" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#16a34a">&#x2713;</text>
+  <text x="354" y="169" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#111827">Dates for every role</text>
+  <text x="354" y="186" font-family="Arial, Helvetica, sans-serif" font-size="10.5" fill="#6b7280">Month and year required</text>
+
+  <!-- Row 1, Col 2 -->
+  <rect x="576" y="143" width="265" height="66" rx="10" fill="white" stroke="#bbf7d0" stroke-width="1.5"/>
+  <circle cx="608" cy="176" r="16" fill="#dcfce7"/>
+  <text x="608" y="181" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#16a34a">&#x2713;</text>
+  <text x="632" y="169" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#111827">Skills mirror the JD</text>
+  <text x="632" y="186" font-family="Arial, Helvetica, sans-serif" font-size="10.5" fill="#6b7280">Use their exact phrasing</text>
+
+  <!-- Row 2, Col 0 -->
+  <rect x="20" y="224" width="265" height="66" rx="10" fill="white" stroke="#bbf7d0" stroke-width="1.5"/>
+  <circle cx="52" cy="257" r="16" fill="#dcfce7"/>
+  <text x="52" y="262" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#16a34a">&#x2713;</text>
+  <text x="76" y="250" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#111827">Standard fonts only</text>
+  <text x="76" y="267" font-family="Arial, Helvetica, sans-serif" font-size="10.5" fill="#6b7280">Arial, Calibri, or Georgia</text>
+
+  <!-- Row 2, Col 1 -->
+  <rect x="298" y="224" width="265" height="66" rx="10" fill="white" stroke="#bbf7d0" stroke-width="1.5"/>
+  <circle cx="330" cy="257" r="16" fill="#dcfce7"/>
+  <text x="330" y="262" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#16a34a">&#x2713;</text>
+  <text x="354" y="250" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#111827">Saved as DOCX</text>
+  <text x="354" y="267" font-family="Arial, Helvetica, sans-serif" font-size="10.5" fill="#6b7280">Unless PDF is specified</text>
+
+  <!-- Row 2, Col 2 -->
+  <rect x="576" y="224" width="265" height="66" rx="10" fill="white" stroke="#bbf7d0" stroke-width="1.5"/>
+  <circle cx="608" cy="257" r="16" fill="#dcfce7"/>
+  <text x="608" y="262" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#16a34a">&#x2713;</text>
+  <text x="632" y="250" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#111827">Name your file properly</text>
+  <text x="632" y="267" font-family="Arial, Helvetica, sans-serif" font-size="10.5" fill="#6b7280">firstname-lastname-resume.docx</text>
+</svg>

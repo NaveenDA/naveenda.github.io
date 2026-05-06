@@ -1,0 +1,52 @@
+<svg width="860" height="305" viewBox="0 0 860 305" xmlns="http://www.w3.org/2000/svg">
+  <rect width="860" height="305" fill="#f8fafc" rx="14"/>
+
+  <text x="430" y="28" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#111827">Use These Exact Section Names - ATS Recognizes Them</text>
+
+  <!-- Column headers -->
+  <rect x="20" y="40" width="325" height="36" rx="8" fill="#fee2e2"/>
+  <text x="182" y="63" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#dc2626">&#x2717; Confuses ATS</text>
+
+  <rect x="515" y="40" width="325" height="36" rx="8" fill="#dcfce7"/>
+  <text x="677" y="63" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#16a34a">&#x2713; ATS Recognizes</text>
+
+  <!-- Row 1 -->
+  <rect x="20" y="90" width="325" height="34" rx="8" fill="white" stroke="#fecaca" stroke-width="1"/>
+  <text x="182" y="112" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#dc2626">"My Journey"</text>
+  <line x1="348" y1="107" x2="512" y2="107" stroke="#115e59" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <polygon points="508,103 516,107 508,111" fill="#115e59"/>
+  <rect x="515" y="90" width="325" height="34" rx="8" fill="white" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="677" y="112" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="600" fill="#16a34a">Work Experience</text>
+
+  <!-- Row 2 -->
+  <rect x="20" y="132" width="325" height="34" rx="8" fill="white" stroke="#fecaca" stroke-width="1"/>
+  <text x="182" y="154" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#dc2626">"Academic History"</text>
+  <line x1="348" y1="149" x2="512" y2="149" stroke="#115e59" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <polygon points="508,145 516,149 508,153" fill="#115e59"/>
+  <rect x="515" y="132" width="325" height="34" rx="8" fill="white" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="677" y="154" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="600" fill="#16a34a">Education</text>
+
+  <!-- Row 3 -->
+  <rect x="20" y="174" width="325" height="34" rx="8" fill="white" stroke="#fecaca" stroke-width="1"/>
+  <text x="182" y="196" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#dc2626">"What I Know"</text>
+  <line x1="348" y1="191" x2="512" y2="191" stroke="#115e59" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <polygon points="508,187 516,191 508,195" fill="#115e59"/>
+  <rect x="515" y="174" width="325" height="34" rx="8" fill="white" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="677" y="196" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="600" fill="#16a34a">Skills</text>
+
+  <!-- Row 4 -->
+  <rect x="20" y="216" width="325" height="34" rx="8" fill="white" stroke="#fecaca" stroke-width="1"/>
+  <text x="182" y="238" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#dc2626">"Cool Stuff I Built"</text>
+  <line x1="348" y1="233" x2="512" y2="233" stroke="#115e59" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <polygon points="508,229 516,233 508,237" fill="#115e59"/>
+  <rect x="515" y="216" width="325" height="34" rx="8" fill="white" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="677" y="238" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="600" fill="#16a34a">Projects</text>
+
+  <!-- Row 5 -->
+  <rect x="20" y="258" width="325" height="34" rx="8" fill="white" stroke="#fecaca" stroke-width="1"/>
+  <text x="182" y="280" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#dc2626">"Special Honors"</text>
+  <line x1="348" y1="275" x2="512" y2="275" stroke="#115e59" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <polygon points="508,271 516,275 508,279" fill="#115e59"/>
+  <rect x="515" y="258" width="325" height="34" rx="8" fill="white" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="677" y="280" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="600" fill="#16a34a">Certifications</text>
+</svg>

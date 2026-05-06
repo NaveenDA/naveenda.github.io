@@ -3,8 +3,10 @@
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { ExternalLink } from 'lucide-react';
+import Link from 'next/link';
+import type { BlogPostMeta } from '@/lib/blog';
 
-interface BlogPost {
+interface MediumPost {
   title: string;
   link: string;
   pubDate: string;
@@ -13,19 +15,21 @@ interface BlogPost {
   categories: string[];
 }
 
-const Blogs = () => {
-  const [posts, setPosts] = useState<BlogPost[]>([]);
+interface Props {
+  localPosts?: BlogPostMeta[];
+}
+
+const Blogs = ({ localPosts = [] }: Props) => {
+  const [mediumPosts, setMediumPosts] = useState<MediumPost[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchBlogPosts = async () => {
       try {
-        // Using a CORS proxy to fetch the Medium RSS feed
         const response = await fetch('https://api.rss2json.com/v1/api.json?rss_url=https://naveenda.medium.com/feed');
         const data = await response.json();
-        console.log('Raw API response:', data);
-        
-        const noNeed = ["Div === Span"]
+
+        const noNeed = ["Div === Span"];
         if (data.status === 'ok') {
           const posts = data.items.map((item: any) => ({
             title: item.title,
@@ -37,12 +41,13 @@ const Blogs = () => {
             }),
             description: item.description,
             thumbnail: item.thumbnail,
-            categories: item.categories || []   
+            categories: item.categories || []
           }));
-          
-          // remove the posts that contains the words in the noNeed array in title and items doesn't have thumbnail§
-          const filteredPosts = posts.filter((post: BlogPost) => !noNeed.some((word: string) => post.title.includes(word)) && !post.thumbnail);
-          setPosts(filteredPosts);
+
+          const filtered = posts.filter((post: MediumPost) =>
+            !noNeed.some((word) => post.title.includes(word)) && !post.thumbnail
+          );
+          setMediumPosts(filtered);
         }
       } catch (error) {
         console.error('Error fetching blog posts:', error);
@@ -57,7 +62,6 @@ const Blogs = () => {
   return (
     <section className="min-h-screen bg-slate-50 px-8 py-20" id="blogs">
       <div className="max-w-7xl mx-auto">
-        {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-6">
             Blogs <span className="bg-teal-800 w-4 h-4 rounded-full inline-block" />
@@ -67,7 +71,6 @@ const Blogs = () => {
           </p>
         </div>
 
-        {/* Blog Posts Grid */}
         {loading ? (
           <div className="text-center py-12">
             <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-teal-800 mx-auto"></div>
@@ -75,7 +78,59 @@ const Blogs = () => {
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {posts.map((post, index) => (
+            {/* Local markdown posts */}
+            {localPosts.map((post, index) => (
+              <motion.div
+                key={post.slug}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8, delay: index * 0.2 }}
+              >
+                <Link
+                  href={`/blog/${post.slug}`}
+                  className="group block bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 h-full cursor-pointer"
+                >
+                  {post.thumbnail && (
+                    <div className="aspect-video overflow-hidden">
+                      <img
+                        src={post.thumbnail}
+                        alt={post.title}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                  )}
+                  <div className="p-6 flex flex-col h-full">
+                    <div className="flex items-center justify-between mb-2">
+                      <div className="text-sm text-gray-500">
+                        {new Date(post.date).toLocaleDateString('en-US', {
+                          year: 'numeric',
+                          month: 'long',
+                          day: 'numeric',
+                        })}
+                      </div>
+                      <span className="text-xs bg-teal-50 text-teal-800 px-2 py-0.5 rounded-full font-medium">
+                        {post.readingTime} min read
+                      </span>
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-teal-800 transition-colors">
+                      {post.title}
+                    </h3>
+                    <p className="text-gray-600 line-clamp-3 mb-4 flex-1">{post.description}</p>
+                    <div className="flex flex-wrap gap-1">
+                      {post.tags.map((tag) => (
+                        <span key={tag} className="inline-block bg-slate-100 text-slate-800 text-xs px-2 py-1 rounded-md">
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+
+            {/* Medium posts */}
+            {mediumPosts.map((post, index) => (
               <motion.a
                 key={post.link}
                 href={post.link}
@@ -84,7 +139,7 @@ const Blogs = () => {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.8, delay: index * 0.2 }}
+                transition={{ duration: 0.8, delay: (localPosts.length + index) * 0.2 }}
                 className="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300"
               >
                 {post.thumbnail && (
@@ -101,7 +156,7 @@ const Blogs = () => {
                   <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-teal-800 transition-colors">
                     {post.title}
                   </h3>
-                  <div 
+                  <div
                     className="text-gray-600 line-clamp-3 mb-4"
                     dangerouslySetInnerHTML={{ __html: post.description }}
                   />
@@ -111,7 +166,7 @@ const Blogs = () => {
                   </div>
                   <div className="">
                     {post.categories.map((category) => (
-                      <span key={category} className="inline-block bg-slate-100 text-slate-800  text-xs px-2 py-1 rounded-md mr-2 mt-1">
+                      <span key={category} className="inline-block bg-slate-100 text-slate-800 text-xs px-2 py-1 rounded-md mr-2 mt-1">
                         {category}
                       </span>
                     ))}

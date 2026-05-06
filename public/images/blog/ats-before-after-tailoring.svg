@@ -1,0 +1,69 @@
+<svg width="860" height="310" viewBox="0 0 860 310" xmlns="http://www.w3.org/2000/svg">
+  <rect width="860" height="310" fill="#f8fafc" rx="14"/>
+
+  <text x="430" y="26" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#111827">The Same Bullet Point, Two Very Different Scores</text>
+
+  <!-- LEFT BOX (Before) -->
+  <rect x="10" y="42" width="393" height="252" rx="10" fill="white" stroke="#e2e8f0" stroke-width="1.5"/>
+  <rect x="10" y="42" width="393" height="42" rx="10" fill="#374151"/>
+  <rect x="10" y="74" width="393" height="10" fill="#374151"/>
+  <text x="206" y="68" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="white">BEFORE - Generic Language</text>
+
+  <text x="28" y="108" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#9ca3af">JD requires:</text>
+
+  <rect x="28" y="115" width="118" height="24" rx="12" fill="#fee2e2" stroke="#fca5a5" stroke-width="1"/>
+  <text x="87" y="131" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10.5" fill="#dc2626">&#x2717; cross-functional</text>
+
+  <rect x="152" y="115" width="120" height="24" rx="12" fill="#fee2e2" stroke="#fca5a5" stroke-width="1"/>
+  <text x="212" y="131" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10.5" fill="#dc2626">&#x2717; scalable systems</text>
+
+  <rect x="278" y="115" width="68" height="24" rx="12" fill="#fee2e2" stroke="#fca5a5" stroke-width="1"/>
+  <text x="312" y="131" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10.5" fill="#dc2626">&#x2717; CI/CD</text>
+
+  <line x1="28" y1="150" x2="375" y2="150" stroke="#f1f5f9" stroke-width="1"/>
+
+  <text x="28" y="165" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#9ca3af">Your bullet:</text>
+  <text x="28" y="182" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#9ca3af" font-style="italic">"Led projects across multiple teams to build</text>
+  <text x="28" y="198" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#9ca3af" font-style="italic">efficient backend systems using modern</text>
+  <text x="28" y="214" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#9ca3af" font-style="italic">deployment practices"</text>
+
+  <text x="28" y="238" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" fill="#6b7280">ATS Match</text>
+  <rect x="28" y="244" width="340" height="8" rx="4" fill="#f1f5f9"/>
+  <rect x="28" y="244" width="48" height="8" rx="4" fill="#dc2626"/>
+  <text x="28" y="270" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#dc2626">14%</text>
+  <text x="72" y="270" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#9ca3af">keywords matched</text>
+
+  <!-- CENTER ARROW -->
+  <line x1="410" y1="167" x2="447" y2="167" stroke="#115e59" stroke-width="2.5"/>
+  <polygon points="443,162 455,167 443,172" fill="#115e59"/>
+
+  <!-- RIGHT BOX (After) -->
+  <rect x="457" y="42" width="393" height="252" rx="10" fill="white" stroke="#e2e8f0" stroke-width="1.5"/>
+  <rect x="457" y="42" width="393" height="42" rx="10" fill="#115e59"/>
+  <rect x="457" y="74" width="393" height="10" fill="#115e59"/>
+  <text x="653" y="68" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="white">AFTER - Mirrored to JD</text>
+
+  <text x="475" y="108" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#6b7280">JD requires:</text>
+
+  <rect x="475" y="115" width="118" height="24" rx="12" fill="#115e59"/>
+  <text x="534" y="131" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10.5" fill="white">&#x2713; cross-functional</text>
+
+  <rect x="599" y="115" width="120" height="24" rx="12" fill="#115e59"/>
+  <text x="659" y="131" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10.5" fill="white">&#x2713; scalable systems</text>
+
+  <rect x="725" y="115" width="68" height="24" rx="12" fill="#115e59"/>
+  <text x="759" y="131" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10.5" fill="white">&#x2713; CI/CD</text>
+
+  <line x1="475" y1="150" x2="822" y2="150" stroke="#f1f5f9" stroke-width="1"/>
+
+  <text x="475" y="165" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#6b7280">Your bullet:</text>
+  <text x="475" y="182" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#111827" font-style="italic">"Led cross-functional collaboration to build</text>
+  <text x="475" y="198" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#111827" font-style="italic">scalable systems with CI/CD pipelines</text>
+  <text x="475" y="214" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#111827" font-style="italic">across engineering teams"</text>
+
+  <text x="475" y="238" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" fill="#6b7280">ATS Match</text>
+  <rect x="475" y="244" width="340" height="8" rx="4" fill="#f1f5f9"/>
+  <rect x="475" y="244" width="269" height="8" rx="4" fill="#0d9488"/>
+  <text x="475" y="270" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#0d9488">79%</text>
+  <text x="519" y="270" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#9ca3af">keywords matched</text>
+</svg>

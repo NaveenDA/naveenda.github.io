@@ -97,7 +97,7 @@ const Projects = () => {
              Projects <span className={`bg-teal-800 w-4 h-4 rounded-full inline-block`} />
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Experience AI in action—click below to run the projects live and see intelligence at play!
+            Experience AI in action--click below to run the projects live and see intelligence at play!
             <br />
             Following are the completly browser based AI projects, by clicking on the project you can see the AI in action.
           </p>

@@ -4,6 +4,7 @@ import OpenSourceContributions from "@/components/open-source"
 import Blogs from "@/components/blogs"
 import Footer from "@/components/footer"
 import Projects from "@/components/projects"
+import { getAllPosts } from "@/lib/blog"
 
 export const metadata: Metadata = {
   title: 'NaveenDA',
@@ -24,12 +25,14 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
+  const localPosts = getAllPosts();
+
   return (
     <main className="min-h-screen">
       <Hero />
       <Projects />
       <OpenSourceContributions />
-      <Blogs />
+      <Blogs localPosts={localPosts} />
       <Footer />
     </main>
   );

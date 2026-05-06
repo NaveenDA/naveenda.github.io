@@ -1,0 +1,97 @@
+<svg width="860" height="210" viewBox="0 0 860 210" xmlns="http://www.w3.org/2000/svg">
+  <rect width="860" height="210" fill="#f8fafc" rx="14"/>
+
+  <text x="430" y="30" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#111827">How Your Resume Travels Through an ATS</text>
+
+  <!-- STEP 1: You Submit -->
+  <g transform="translate(20, 45)">
+    <rect width="140" height="145" rx="10" fill="white" stroke="#e2e8f0" stroke-width="1.5"/>
+    <circle cx="70" cy="38" r="26" fill="#115e59"/>
+    <!-- Document icon -->
+    <rect x="58" y="24" width="20" height="26" rx="2" fill="white" opacity="0.9"/>
+    <polygon points="70,24 78,24 78,32" fill="#115e59"/>
+    <line x1="62" y1="36" x2="74" y2="36" stroke="#115e59" stroke-width="1.5"/>
+    <line x1="62" y1="40" x2="74" y2="40" stroke="#115e59" stroke-width="1.5"/>
+    <line x1="62" y1="44" x2="69" y2="44" stroke="#115e59" stroke-width="1.5"/>
+    <text x="70" y="80" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">You Submit</text>
+    <text x="70" y="97" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#6b7280">Upload resume</text>
+    <text x="70" y="112" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#6b7280">to job portal</text>
+    <text x="70" y="134" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#9ca3af">Step 1</text>
+  </g>
+
+  <!-- Arrow 1→2 -->
+  <line x1="163" y1="117" x2="183" y2="117" stroke="#115e59" stroke-width="2"/>
+  <polygon points="181,113 191,117 181,121" fill="#115e59"/>
+
+  <!-- STEP 2: ATS Parses -->
+  <g transform="translate(190, 45)">
+    <rect width="140" height="145" rx="10" fill="white" stroke="#e2e8f0" stroke-width="1.5"/>
+    <circle cx="70" cy="38" r="26" fill="#115e59"/>
+    <!-- Gear icon -->
+    <circle cx="70" cy="38" r="13" fill="none" stroke="white" stroke-width="2.5"/>
+    <circle cx="70" cy="38" r="5" fill="white"/>
+    <rect x="68.5" y="22" width="3" height="5" rx="1" fill="white"/>
+    <rect x="68.5" y="49" width="3" height="5" rx="1" fill="white"/>
+    <rect x="54" y="36.5" width="5" height="3" rx="1" fill="white"/>
+    <rect x="81" y="36.5" width="5" height="3" rx="1" fill="white"/>
+    <text x="70" y="80" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">ATS Parses</text>
+    <text x="70" y="97" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#6b7280">Extracts name,</text>
+    <text x="70" y="112" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#6b7280">skills, experience</text>
+    <text x="70" y="134" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#9ca3af">Step 2</text>
+  </g>
+
+  <!-- Arrow 2→3 -->
+  <line x1="333" y1="117" x2="353" y2="117" stroke="#115e59" stroke-width="2"/>
+  <polygon points="351,113 361,117 351,121" fill="#115e59"/>
+
+  <!-- STEP 3: Keyword Score -->
+  <g transform="translate(360, 45)">
+    <rect width="140" height="145" rx="10" fill="white" stroke="#e2e8f0" stroke-width="1.5"/>
+    <circle cx="70" cy="38" r="26" fill="#115e59"/>
+    <!-- Magnifying glass -->
+    <circle cx="66" cy="34" r="10" fill="none" stroke="white" stroke-width="2.5"/>
+    <line x1="74" y1="42" x2="82" y2="50" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="70" y="80" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Keyword Score</text>
+    <text x="70" y="97" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#6b7280">Compares your</text>
+    <text x="70" y="112" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#6b7280">resume to the JD</text>
+    <text x="70" y="134" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#9ca3af">Step 3</text>
+  </g>
+
+  <!-- Arrow 3→4 -->
+  <line x1="503" y1="117" x2="523" y2="117" stroke="#115e59" stroke-width="2"/>
+  <polygon points="521,113 531,117 521,121" fill="#115e59"/>
+
+  <!-- STEP 4: Candidates Ranked -->
+  <g transform="translate(530, 45)">
+    <rect width="140" height="145" rx="10" fill="white" stroke="#e2e8f0" stroke-width="1.5"/>
+    <circle cx="70" cy="38" r="26" fill="#115e59"/>
+    <!-- Bar chart (bars grow upward from baseline y=48) -->
+    <rect x="52" y="38" width="7" height="10" fill="white" opacity="0.95"/>
+    <rect x="62" y="30" width="7" height="18" fill="white" opacity="0.95"/>
+    <rect x="72" y="34" width="7" height="14" fill="white" opacity="0.95"/>
+    <rect x="82" y="42" width="7" height="6" fill="white" opacity="0.5"/>
+    <text x="70" y="80" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Candidates</text>
+    <text x="70" y="96" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Ranked</text>
+    <text x="70" y="112" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#6b7280">Your score vs.</text>
+    <text x="70" y="127" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#6b7280">all applicants</text>
+    <text x="70" y="140" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#9ca3af">Step 4</text>
+  </g>
+
+  <!-- Arrow 4→5 -->
+  <line x1="673" y1="117" x2="693" y2="117" stroke="#115e59" stroke-width="2"/>
+  <polygon points="691,113 701,117 691,121" fill="#115e59"/>
+
+  <!-- STEP 5: Recruiter Reviews -->
+  <g transform="translate(700, 45)">
+    <rect width="140" height="145" rx="10" fill="white" stroke="#e2e8f0" stroke-width="1.5"/>
+    <circle cx="70" cy="38" r="26" fill="#0d9488"/>
+    <!-- Person icon -->
+    <circle cx="70" cy="29" r="8" fill="white" opacity="0.95"/>
+    <path d="M54,50 Q54,40 70,40 Q86,40 86,50" fill="white" opacity="0.95"/>
+    <text x="70" y="80" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Recruiter</text>
+    <text x="70" y="96" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Reviews</text>
+    <text x="70" y="112" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#6b7280">Only top matches</text>
+    <text x="70" y="127" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#6b7280">are shown</text>
+    <text x="70" y="140" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#9ca3af">Step 5</text>
+  </g>
+</svg>

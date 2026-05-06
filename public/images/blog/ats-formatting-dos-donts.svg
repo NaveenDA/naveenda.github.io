@@ -1,0 +1,98 @@
+<svg width="860" height="360" viewBox="0 0 860 360" xmlns="http://www.w3.org/2000/svg">
+  <rect width="860" height="360" fill="#f8fafc" rx="14"/>
+
+  <text x="430" y="28" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#111827">ATS Formatting: What to Avoid vs. What Works</text>
+
+  <!-- Left header -->
+  <rect x="10" y="40" width="405" height="36" rx="8" fill="#fee2e2"/>
+  <text x="215" y="63" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#dc2626">&#x2717; Breaks ATS Parsing</text>
+
+  <!-- Right header -->
+  <rect x="445" y="40" width="405" height="36" rx="8" fill="#dcfce7"/>
+  <text x="647" y="63" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#16a34a">&#x2713; ATS-Safe Format</text>
+
+  <!-- Centre divider -->
+  <line x1="430" y1="40" x2="430" y2="325" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <!-- BAD: item 1 -->
+  <g transform="translate(10, 90)">
+    <rect width="405" height="40" rx="6" fill="white" stroke="#fecaca" stroke-width="1"/>
+    <text x="14" y="17" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#dc2626">&#x2717;</text>
+    <text x="34" y="17" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Two-column layout</text>
+    <text x="34" y="32" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#6b7280">Columns get read left-to-right, mixing unrelated content</text>
+  </g>
+
+  <!-- BAD: item 2 -->
+  <g transform="translate(10, 136)">
+    <rect width="405" height="40" rx="6" fill="white" stroke="#fecaca" stroke-width="1"/>
+    <text x="14" y="17" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#dc2626">&#x2717;</text>
+    <text x="34" y="17" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Tables for skills or experience</text>
+    <text x="34" y="32" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#6b7280">Parsed out of order - dates and titles get swapped</text>
+  </g>
+
+  <!-- BAD: item 3 -->
+  <g transform="translate(10, 182)">
+    <rect width="405" height="40" rx="6" fill="white" stroke="#fecaca" stroke-width="1"/>
+    <text x="14" y="17" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#dc2626">&#x2717;</text>
+    <text x="34" y="17" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Icons and graphics</text>
+    <text x="34" y="32" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#6b7280">Text inside images is completely invisible to parsers</text>
+  </g>
+
+  <!-- BAD: item 4 -->
+  <g transform="translate(10, 228)">
+    <rect width="405" height="40" rx="6" fill="white" stroke="#fecaca" stroke-width="1"/>
+    <text x="14" y="17" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#dc2626">&#x2717;</text>
+    <text x="34" y="17" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Skill bars (Python: 90%)</text>
+    <text x="34" y="32" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#6b7280">Treated as decorative - keyword value is lost entirely</text>
+  </g>
+
+  <!-- BAD: item 5 -->
+  <g transform="translate(10, 274)">
+    <rect width="405" height="40" rx="6" fill="white" stroke="#fecaca" stroke-width="1"/>
+    <text x="14" y="17" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#dc2626">&#x2717;</text>
+    <text x="34" y="17" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Contact info in header or footer</text>
+    <text x="34" y="32" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#6b7280">Many parsers skip headers and footers entirely</text>
+  </g>
+
+  <!-- GOOD: item 1 -->
+  <g transform="translate(445, 90)">
+    <rect width="405" height="40" rx="6" fill="white" stroke="#bbf7d0" stroke-width="1"/>
+    <text x="14" y="17" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#16a34a">&#x2713;</text>
+    <text x="34" y="17" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Single-column layout</text>
+    <text x="34" y="32" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#6b7280">Reads top to bottom - every field lands in the right section</text>
+  </g>
+
+  <!-- GOOD: item 2 -->
+  <g transform="translate(445, 136)">
+    <rect width="405" height="40" rx="6" fill="white" stroke="#bbf7d0" stroke-width="1"/>
+    <text x="14" y="17" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#16a34a">&#x2713;</text>
+    <text x="34" y="17" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Plain bullet lists</text>
+    <text x="34" y="32" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#6b7280">Clean structure that every ATS handles reliably</text>
+  </g>
+
+  <!-- GOOD: item 3 -->
+  <g transform="translate(445, 182)">
+    <rect width="405" height="40" rx="6" fill="white" stroke="#bbf7d0" stroke-width="1"/>
+    <text x="14" y="17" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#16a34a">&#x2713;</text>
+    <text x="34" y="17" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Text-only skills section</text>
+    <text x="34" y="32" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#6b7280">Exact keywords available for matching and scoring</text>
+  </g>
+
+  <!-- GOOD: item 4 -->
+  <g transform="translate(445, 228)">
+    <rect width="405" height="40" rx="6" fill="white" stroke="#bbf7d0" stroke-width="1"/>
+    <text x="14" y="17" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#16a34a">&#x2713;</text>
+    <text x="34" y="17" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Standard section headings</text>
+    <text x="34" y="32" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#6b7280">Work Experience, Education, Skills - parsers know these</text>
+  </g>
+
+  <!-- GOOD: item 5 -->
+  <g transform="translate(445, 274)">
+    <rect width="405" height="40" rx="6" fill="white" stroke="#bbf7d0" stroke-width="1"/>
+    <text x="14" y="17" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#16a34a">&#x2713;</text>
+    <text x="34" y="17" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Contact info in document body</text>
+    <text x="34" y="32" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#6b7280">Always parsed, never missed by the system</text>
+  </g>
+
+  <text x="430" y="348" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#9ca3af">naveenda.live</text>
+</svg>
