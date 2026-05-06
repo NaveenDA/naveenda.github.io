@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     default: 'Naveen Portfolio | Machine Learning Engineer',
   },
   description: "Machine Learning Engineer with 8+ years of experience building scalable AI systems across startups and enterprise environments. Transforming data into intelligent solutions that drive real business impact.",
+  verification: {
+    google: "uhmDfwJjyzeSLOe1Ux5PCU2Jx8fPVxYhujq8DZ9AJuA",
+  },
   keywords: [
     "Machine Learning Engineer",
     "AI Engineer",
