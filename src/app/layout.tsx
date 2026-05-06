@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Head from 'next/head';
+import Script from "next/script";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -72,11 +73,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={inter.variable}>
-      <Head>
-        <script src="https://cdn.jsdelivr.net/npm/neataptic@1.4.7/dist/neataptic.min.js" />
+      <head>
         <meta name="apple-mobile-web-app-title" content="NaveenDA" />
-      </Head>
+      </head>
       <body className={`${inter.className} antialiased`}>
+        <Script
+          src="https://cdn.jsdelivr.net/npm/neataptic@1.4.7/dist/neataptic.min.js"
+          strategy="beforeInteractive"
+        />
+        <GoogleAnalytics gaId="G-5T64WG8PN5" />
         {children}
       </body>
     </html>
