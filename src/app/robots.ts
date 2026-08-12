@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const SITE_URL = "https://naveenda.live";
+const SITE_URL = "https://naveenda.github.io";
 
 export const dynamic = "force-static";
 

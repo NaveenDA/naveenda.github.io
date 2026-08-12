@@ -195,8 +195,11 @@ export default function LongplayerSimulation() {
     return (
         <>
             <Header />
-            <div className="min-h-screen flex flex-col items-center justify-center text-black p-4">
-                <h1 className="text-3xl font-bold mb-4 text-center">
+            <div className="min-h-screen flex flex-col items-center justify-center p-4">
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold-ink mb-3 text-center">
+                    Tools &middot; Generative Audio
+                </p>
+                <h1 className="font-display text-3xl md:text-4xl mb-4 text-center text-foreground">
                     Longplayer Simulation
                 </h1>
 
@@ -213,7 +216,7 @@ export default function LongplayerSimulation() {
                 <div className="flex items-center gap-4 mb-4">
                     <button
                         onClick={handleTogglePlayPause}
-                        className="bg-blue-600 text-white p-3 rounded-full shadow hover:bg-blue-700 transition-colors"
+                        className="bg-gold text-ink p-3 border border-ink shadow-hard-sm hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] transition-all"
                         aria-label={playbackState === "playing"
                             ? "Pause"
                             : "Play"}
@@ -225,14 +228,14 @@ export default function LongplayerSimulation() {
                     <button
                         onClick={handleStop}
                         disabled={!isRunning}
-                        className="bg-gray-700 text-white p-3 rounded-full shadow hover:bg-gray-800 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                        className="bg-ink text-paper p-3 border border-ink hover:bg-ink/80 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
                         aria-label="Stop"
                     >
                         <Square size={24} />
                     </button>
                 </div>
 
-                <div className="flex items-center gap-2 w-full max-w-xs">
+                <div className="flex items-center gap-2 w-full max-w-xs text-foreground">
                     <VolumeX size={20} />
                     <input
                         type="range"
@@ -241,24 +244,23 @@ export default function LongplayerSimulation() {
                         step="1"
                         value={volume}
                         onChange={(e) => setVolume(Number(e.target.value))}
-                        className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer"
+                        className="w-full h-2 bg-secondary rounded-lg appearance-none cursor-pointer accent-gold"
                         aria-label="Volume"
                     />
                     <Volume2 size={20} />
                 </div>
 
-                <p className="mt-6 text-sm text-gray-600 text-center max-w-md">
+                <p className="mt-6 text-sm text-muted-foreground text-center max-w-md">
                     This simulation uses six sound loops of different lengths
                     that continuously play to create a soundscape that will not
                     repeat for over 1000 years. Use the controls to play, pause,
                     stop, and adjust the volume.
                 </p>
-                {/* Back to blog */}
                 <a
                     href="/tools/longplayer"
-                    className="text-blue-600 hover:text-blue-700 bg-white border mt-4 border-blue-600 px-4 py-2 rounded-lg"
+                    className="text-sm font-medium underline underline-offset-4 decoration-foreground/30 hover:decoration-gold-ink transition-colors mt-4"
                 >
-                    Back to blog
+                    Back to article
                 </a>
             </div>
             <Footer />

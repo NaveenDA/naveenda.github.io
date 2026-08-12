@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Fraunces } from "next/font/google";
 import "./globals.css";
-import Script from "next/script";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
 const inter = Inter({
@@ -9,12 +8,19 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
+const fraunces = Fraunces({
+  subsets: ["latin"],
+  variable: "--font-fraunces",
+  weight: ["400", "500", "600"],
+  style: ["normal", "italic"],
+});
+
 export const metadata: Metadata = {
   title: {
     template: '%s | Naveen Portfolio',
     default: 'Naveen Portfolio | Machine Learning Engineer',
   },
-  description: "Machine Learning Engineer with 8+ years of experience building scalable AI systems across startups and enterprise environments. Transforming data into intelligent solutions that drive real business impact.",
+  description: "Machine Learning Engineer with 10 years of experience building scalable AI systems across startups and enterprise environments. Transforming data into intelligent solutions that drive real business impact.",
   verification: {
     google: "uhmDfwJjyzeSLOe1Ux5PCU2Jx8fPVxYhujq8DZ9AJuA",
   },
@@ -36,13 +42,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://naveenda.live",
+    url: "https://naveenda.github.io",
     title: "Naveen DA - Machine Learning Engineer",
-    description: "Machine Learning Engineer with 8+ years of experience building scalable AI systems across startups and enterprise environments.",
+    description: "Machine Learning Engineer with 10 years of experience building scalable AI systems across startups and enterprise environments.",
     siteName: "Naveen DA Portfolio",
     images: [
       {
-        url: 'https://naveenda.live/og-image.jpg',
+        url: 'https://naveenda.github.io/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Naveen DA Portfolio',
@@ -52,7 +58,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Naveen DA - Machine Learning Engineer",
-    description: "Machine Learning Engineer with 8+ years of experience building scalable AI systems across startups and enterprise environments.",
+    description: "Machine Learning Engineer with 10 years of experience building scalable AI systems across startups and enterprise environments.",
     creator: "@naveenda_",
     site: "@naveenda_",
   },
@@ -75,15 +81,12 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={inter.variable}>
+    <html lang="en" className={`${inter.variable} ${fraunces.variable}`}>
       <head>
         <meta name="apple-mobile-web-app-title" content="NaveenDA" />
       </head>
       <body className={`${inter.className} antialiased`}>
-        <Script
-          src="https://cdn.jsdelivr.net/npm/neataptic@1.4.7/dist/neataptic.min.js"
-          strategy="beforeInteractive"
-        />
+        <div className="grain-overlay" aria-hidden="true" />
         <GoogleAnalytics gaId="G-5T64WG8PN5" />
         {children}
       </body>

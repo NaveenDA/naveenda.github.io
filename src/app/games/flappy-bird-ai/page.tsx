@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Bird from "./bird";
+import BackHome from "@/components/back-home";
 
 export const metadata: Metadata = {
   title: 'Flappy Bird AI - NEAT Implementation',
@@ -7,10 +8,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Flappy Bird AI - NEAT Neural Evolution',
     description: 'Experience Flappy Bird played by an AI that learns using the NEAT algorithm. Watch as neural networks evolve and adapt to master the game through natural selection.',
-    url: 'https://naveenda.live/games/flappy-bird-ai',
+    url: 'https://naveenda.github.io/games/flappy-bird-ai',
     images: [
       {
-        url: 'https://naveenda.live/og-image.jpg',
+        url: 'https://naveenda.github.io/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Flappy Bird AI with NEAT Algorithm',
@@ -38,7 +39,10 @@ export const metadata: Metadata = {
 
 const FlappyBirdPage = () => {
     return (
-       <Bird />
+        <>
+            <BackHome />
+            <Bird />
+        </>
     );
 };
 

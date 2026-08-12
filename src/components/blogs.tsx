@@ -2,7 +2,8 @@
 
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { ExternalLink } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
+import Image from 'next/image';
 import Link from 'next/link';
 import type { BlogPostMeta } from '@/lib/blog';
 
@@ -59,69 +60,71 @@ const Blogs = ({ localPosts = [] }: Props) => {
     fetchBlogPosts();
   }, []);
 
+  const hasPosts = localPosts.length > 0 || mediumPosts.length > 0;
+
   return (
-    <section className="min-h-screen bg-slate-50 px-8 py-20" id="blogs">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-6">
-            Blogs <span className="bg-teal-800 w-4 h-4 rounded-full inline-block" />
-          </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Sharing my thoughts and experiences in machine learning, AI, and technology.
-          </p>
+    <section className="px-6 md:px-10 py-24 md:py-32 bg-secondary/40" id="blogs">
+      <div className="max-w-6xl mx-auto">
+        <div className="flex items-end justify-between gap-8 mb-16 flex-wrap">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold-ink mb-4">
+              Writing
+            </p>
+            <h2 className="font-display text-4xl md:text-5xl leading-tight">
+              Notes from the lab.
+            </h2>
+          </div>
+          <Link
+            href="/blog"
+            className="text-sm font-medium underline underline-offset-4 decoration-foreground/30 hover:decoration-gold-ink transition-colors"
+          >
+            All posts
+          </Link>
         </div>
 
         {loading ? (
           <div className="text-center py-12">
-            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-teal-800 mx-auto"></div>
-            <p className="mt-4 text-gray-600">Loading blog posts...</p>
+            <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-gold mx-auto"></div>
           </div>
+        ) : !hasPosts ? (
+          <p className="text-muted-foreground">Posts coming soon.</p>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Local markdown posts */}
             {localPosts.map((post, index) => (
               <motion.div
                 key={post.slug}
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ opacity: 0, y: 24 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.8, delay: index * 0.2 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
               >
-                <Link
-                  href={`/blog/${post.slug}`}
-                  className="group block bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 h-full cursor-pointer"
-                >
+                <Link href={`/blog/${post.slug}`} className="group block h-full border border-border bg-card">
                   {post.thumbnail && (
-                    <div className="aspect-video overflow-hidden">
-                      <img
+                    <div className="relative aspect-video overflow-hidden border-b border-border">
+                      <Image
                         src={post.thumbnail}
                         alt={post.title}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        fill
+                        className="object-cover group-hover:scale-105 transition-transform duration-300"
                       />
                     </div>
                   )}
                   <div className="p-6 flex flex-col h-full">
-                    <div className="flex items-center justify-between mb-2">
-                      <div className="text-sm text-gray-500">
-                        {new Date(post.date).toLocaleDateString('en-US', {
-                          year: 'numeric',
-                          month: 'long',
-                          day: 'numeric',
-                        })}
-                      </div>
-                      <span className="text-xs bg-teal-50 text-teal-800 px-2 py-0.5 rounded-full font-medium">
-                        {post.readingTime} min read
-                      </span>
+                    <div className="flex items-center justify-between mb-3 text-xs text-muted-foreground uppercase tracking-wide">
+                      <time dateTime={post.date}>
+                        {new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}
+                      </time>
+                      <span>{post.readingTime} min read</span>
                     </div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-teal-800 transition-colors">
+                    <h3 className="font-display text-xl mb-3 group-hover:text-gold-ink transition-colors">
                       {post.title}
                     </h3>
-                    <p className="text-gray-600 line-clamp-3 mb-4 flex-1">{post.description}</p>
-                    <div className="flex flex-wrap gap-1">
+                    <p className="text-sm text-muted-foreground leading-relaxed line-clamp-3 mb-4 flex-1">
+                      {post.description}
+                    </p>
+                    <div className="flex flex-wrap gap-x-2 text-[11px] text-muted-foreground uppercase tracking-wide">
                       {post.tags.map((tag) => (
-                        <span key={tag} className="inline-block bg-slate-100 text-slate-800 text-xs px-2 py-1 rounded-md">
-                          {tag}
-                        </span>
+                        <span key={tag}>{tag}</span>
                       ))}
                     </div>
                   </div>
@@ -129,46 +132,35 @@ const Blogs = ({ localPosts = [] }: Props) => {
               </motion.div>
             ))}
 
-            {/* Medium posts */}
             {mediumPosts.map((post, index) => (
               <motion.a
                 key={post.link}
                 href={post.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ opacity: 0, y: 24 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.8, delay: (localPosts.length + index) * 0.2 }}
-                className="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300"
+                transition={{ duration: 0.6, delay: (localPosts.length + index) * 0.1 }}
+                className="group block border border-border bg-card"
               >
-                {post.thumbnail && (
-                  <div className="aspect-video overflow-hidden">
-                    <img
-                      src={post.thumbnail}
-                      alt={post.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 min-h-[200px]"
-                    />
-                  </div>
-                )}
                 <div className="p-6">
-                  <div className="text-sm text-gray-500 mb-2">{post.pubDate}</div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-teal-800 transition-colors">
+                  <div className="flex items-center justify-between mb-3 text-xs text-muted-foreground uppercase tracking-wide">
+                    <span>{post.pubDate}</span>
+                    <span className="inline-flex items-center gap-1">
+                      Medium <ArrowUpRight className="w-3 h-3" />
+                    </span>
+                  </div>
+                  <h3 className="font-display text-xl mb-3 group-hover:text-gold-ink transition-colors">
                     {post.title}
                   </h3>
                   <div
-                    className="text-gray-600 line-clamp-3 mb-4"
+                    className="text-sm text-muted-foreground leading-relaxed line-clamp-3 mb-4"
                     dangerouslySetInnerHTML={{ __html: post.description }}
                   />
-                  <div className="flex items-center text-teal-800 font-medium">
-                    Read More
-                    <ExternalLink className="ml-2 w-4 h-4" />
-                  </div>
-                  <div className="">
+                  <div className="flex flex-wrap gap-x-2 text-[11px] text-muted-foreground uppercase tracking-wide">
                     {post.categories.map((category) => (
-                      <span key={category} className="inline-block bg-slate-100 text-slate-800 text-xs px-2 py-1 rounded-md mr-2 mt-1">
-                        {category}
-                      </span>
+                      <span key={category}>{category}</span>
                     ))}
                   </div>
                 </div>

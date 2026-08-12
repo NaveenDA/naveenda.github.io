@@ -1,4 +1,5 @@
 import SnakeAI from "./ai";
+import BackHome from "@/components/back-home";
 import type { Metadata } from 'next';
 
 // let's add metadata here
@@ -9,10 +10,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Snake AI - NEAT Q-Learning Implementation',
     description: 'Experience the classic Snake game powered by AI using NEAT and Q-Learning algorithms. Watch the AI learn and improve its gameplay through reinforcement learning.',
-    url: 'https://naveenda.live/games/snake-ai',
+    url: 'https://naveenda.github.io/games/snake-ai',
     images: [
       {
-        url: 'https://naveenda.live/og-image.jpg',
+        url: 'https://naveenda.github.io/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Snake AI Game with NEAT Q-Learning',
@@ -40,7 +41,10 @@ export const metadata: Metadata = {
 
 const SnakeAIPage = () => {
     return (
-        <SnakeAI />
+        <>
+            <BackHome />
+            <SnakeAI />
+        </>
     )
 }
 

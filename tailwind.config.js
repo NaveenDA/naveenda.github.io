@@ -41,6 +41,18 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        ink: {
+          DEFAULT: "#17160F",
+          soft: "#3A382E",
+        },
+        paper: {
+          DEFAULT: "#FFFFFF",
+          dim: "#F2F2F2",
+        },
+        gold: {
+          DEFAULT: "#FDC353",
+          ink: "#9C6B0E",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -49,6 +61,12 @@ module.exports = {
       },
       fontFamily: {
         sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
+        display: ['var(--font-fraunces)', 'Georgia', 'serif'],
+      },
+      boxShadow: {
+        hard: "5px 5px 0 0 rgba(23, 22, 15, 1)",
+        "hard-sm": "3px 3px 0 0 rgba(23, 22, 15, 1)",
+        "hard-gold": "5px 5px 0 0 rgba(200, 134, 13, 1)",
       },
       animation: {
         "fade-in": "fade-in 0.5s ease-in-out",
