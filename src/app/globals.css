@@ -45,7 +45,7 @@
   }
 }
 
-/* Fixed, low-opacity noise texture over the whole site — gives the flat
+/* Fixed, low-opacity noise texture over the whole site. Gives the flat
    paper background some tactility without dependence on any image asset. */
 .grain-overlay {
   position: fixed;
