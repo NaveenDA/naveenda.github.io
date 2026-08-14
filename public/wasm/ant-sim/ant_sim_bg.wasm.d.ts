@@ -1,0 +1,33 @@
+/* tslint:disable */
+/* eslint-disable */
+export const memory: WebAssembly.Memory;
+export const __wbg_simulation_free: (a: number, b: number) => void;
+export const getMemory: () => any;
+export const simulation_angle_ptr: (a: number) => number;
+export const simulation_ant_count: (a: number) => number;
+export const simulation_cell_size: (a: number) => number;
+export const simulation_collected: (a: number) => number;
+export const simulation_food_amount_ptr: (a: number) => number;
+export const simulation_food_count: (a: number) => number;
+export const simulation_food_x_ptr: (a: number) => number;
+export const simulation_food_y_ptr: (a: number) => number;
+export const simulation_has_food_ptr: (a: number) => number;
+export const simulation_nest_radius: (a: number) => number;
+export const simulation_nest_x: (a: number) => number;
+export const simulation_nest_y: (a: number) => number;
+export const simulation_new: (a: number, b: number, c: number, d: number) => number;
+export const simulation_obstacle_count: (a: number) => number;
+export const simulation_obstacle_r_ptr: (a: number) => number;
+export const simulation_obstacle_x_ptr: (a: number) => number;
+export const simulation_obstacle_y_ptr: (a: number) => number;
+export const simulation_pher_grid_h: (a: number) => number;
+export const simulation_pher_grid_w: (a: number) => number;
+export const simulation_pher_ptr: (a: number) => number;
+export const simulation_pos_x_ptr: (a: number) => number;
+export const simulation_pos_y_ptr: (a: number) => number;
+export const simulation_reset: (a: number) => void;
+export const simulation_search_pher_ptr: (a: number) => number;
+export const simulation_set_ant_count: (a: number, b: number) => void;
+export const simulation_step: (a: number, b: number) => void;
+export const __wbindgen_externrefs: WebAssembly.Table;
+export const __wbindgen_start: () => void;

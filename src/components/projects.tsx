@@ -33,6 +33,15 @@ const projects = [
     href: "/tools/longplayer",
     tags: ["Tone.js", "Generative"],
   },
+  {
+    category: "Rust · WebAssembly",
+    title: "Ant Colony Simulation",
+    description: "Thousands of ants lay and follow pheromone trails, and the shortest path to food emerges with no ant ever seeing the whole map.",
+    image: "/ant-colony.png",
+    imageAlt: "Ant colony simulation with pheromone trails",
+    href: "/games/ant-colony",
+    tags: ["Rust", "WebAssembly", "Emergent Behavior"],
+  },
 ]
 
 const Projects = () => {
@@ -51,12 +60,12 @@ const Projects = () => {
             </h2>
           </div>
           <p className="text-paper/60 max-w-sm text-sm leading-relaxed">
-            Three browser-based experiments in how machines learn. Click
+            Four browser-based experiments in how machines learn. Click
             through to run each one live, right where it&rsquo;s hosted.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-paper/15">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-paper/15">
           {projects.map((project, i) => (
             <motion.button
               key={project.title}

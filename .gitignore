@@ -36,6 +36,9 @@ yarn-error.log*
 # vercel
 .vercel
 
+# rust / wasm build cache (public/wasm/ant-sim is the committed build output)
+/wasm/*/target/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

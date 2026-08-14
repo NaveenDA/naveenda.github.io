@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import * as Phaser from 'phaser';
+import { loadScriptOnce } from '@/lib/loadScript';
 
 interface FlappyBirdGameProps {
   population?: number;
@@ -21,21 +22,6 @@ declare global {
   }
 }
 
-function loadScript(src: string): Promise<void> {
-  return new Promise((resolve, reject) => {
-    if (document.querySelector(`script[src="${src}"]`)) {
-      resolve();
-      return;
-    }
-    const script = document.createElement('script');
-    script.src = src;
-    script.async = true;
-    script.onload = () => resolve();
-    script.onerror = () => reject();
-    document.body.appendChild(script);
-  });
-}
-
 const FlappyBirdGame = ({ population: initialPopulation = 100 }: FlappyBirdGameProps) => {
   const gameRef = useRef<HTMLDivElement>(null);
   const [showModal, setShowModal] = useState(true);
@@ -48,7 +34,7 @@ const FlappyBirdGame = ({ population: initialPopulation = 100 }: FlappyBirdGameP
     let neatapticLoaded = false;
     let destroyGame = () => {};
 
-    loadScript('https://cdn.jsdelivr.net/npm/neataptic@1.4.7/dist/neataptic.min.js').then(() => {
+    loadScriptOnce('https://cdn.jsdelivr.net/npm/neataptic@1.4.7/dist/neataptic.min.js').then(() => {
       neatapticLoaded = true;
       if (!gameRef.current || typeof window === 'undefined' || !window.neataptic) return;
       const { Network, Neat, methods, architect } = window.neataptic;
